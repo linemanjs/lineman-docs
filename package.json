@@ -1,0 +1,14 @@
+{
+  "name": "some-lineman-blog",
+  "title": "An HTML/JS/CSS app",
+  "version": "0.0.1",
+  "private": true,
+  "author": {
+    "name": "John Doe",
+    "company": "ACME, Inc."
+  },
+  "dependencies": {
+    "lineman": ">=0.11.6",
+    "grunt-markdown-blog": ">= 0.2.2"
+  }
+}

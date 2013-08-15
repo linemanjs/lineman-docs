@@ -1,0 +1,29 @@
+<%
+  htmlForCategory = function(category) {
+    return _(site.pages).chain()
+      .filter(function(page) {
+        return page.attributes.category === category;
+      })
+      .sortBy(function(page) {
+        return page.attributes.ordinal;
+      })
+      .reduce(function(html, page) {
+        return html + site.htmlFor(page);
+      }, "")
+      .value()
+  }
+
+  categories = [
+    "understanding-lineman",
+    "working-with-lineman",
+    "advanced-features",
+    "customizing-lineman",
+    "about-lineman"
+  ];
+%>
+
+<%=
+  _(categories).reduce(function(html, category) {
+    return html + htmlForCategory(category);
+  }, "")
+%>
