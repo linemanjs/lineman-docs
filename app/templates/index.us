@@ -1,6 +1,6 @@
 <%
   htmlForCategory = function(category) {
-    return _(site.pages).chain()
+    var categoryHtml = _(site.pages).chain()
       .filter(function(page) {
         return page.attributes.category === category;
       })
@@ -10,7 +10,17 @@
       .reduce(function(html, page) {
         return html + site.htmlFor(page);
       }, "")
-      .value()
+      .value();
+
+    var categoryHeader = headerForCategory(category);
+
+    return [categoryHeader, categoryHtml].join("\n");
+  }
+
+  headerForCategory = function(category) {
+    var title = _.titleize(category.split("-").join(" "));
+
+    return "<h2 id='" + category + "'>" + title + "</h2>";
   }
 
   categories = [

@@ -5,7 +5,7 @@ slug: "develop-test-build"
 ordinal: 4
 ---
 
-### Web Server (Express JS)
+#### Web Server (Express JS)
 
 Once you've generated a directory structure with the default project template, or cloned a framework project template then it's time to get developing with Lineman.
 
@@ -17,7 +17,7 @@ In your command-line interface:
 
 <img src="http://placehold.it/850x100&text=image of `lineman run` here" />
 
-### Test Runner (Testem)
+#### Test Runner (Testem)
 
 Lineman integrates a full-featured test runner called Testem. Whether you are using the default project template, or have cloned a framework project template you will have a set of default tests within the `spec` directory. Lineman works by compiling all your files whenever it detects a change on disk during `lineman run`, Lineman also configures Testem to re-run tests on every file change.
 
@@ -27,7 +27,7 @@ In another command-line interface session:
 
 <img src="http://placehold.it/850x100&text=image of `lineman spec` here" />
 
-### Continuous Integration (Testem)
+#### Continuous Integration (Testem)
 
 Lineman comes pre-configured to execute your tests using Testems "CI" mode which will run tests against Phantom JS and yield output in TAP13 format which is easy for CI environments (such as Jenkins) to consume:
 
@@ -35,7 +35,7 @@ Lineman comes pre-configured to execute your tests using Testems "CI" mode which
 
 <img src="http://placehold.it/850x100&text=image of `lineman spec-ci` here" />
 
-### Build Tool (Grunt)
+#### Build Tool (Grunt)
 
 When you are ready to bundle up your fat-client app and add the compiled JavaScript, HTML, CSS, Images, and Webfonts to your static web server you can use Linemans build command:
 

@@ -20,7 +20,7 @@
         <li>» <a href="http://github.com/testdouble/lineman">GitHub Repository</a></li>
       </ul>
 
-      <a class="toc_title" href="#">
+      <a class="toc_title" href="#understanding-lineman">
         Understanding Lineman
       </a>
 
@@ -30,7 +30,7 @@
         <li>- <a href="#task-lifecycle">How does Lineman work?</a></li>
       </ul>
 
-      <a class="toc_title" href="#">
+      <a class="toc_title" href="#working-with-lineman">
         Working with Lineman
       </a>
 
@@ -41,7 +41,7 @@
         <li>- <a href="#develop-test-build">Develop, Test, Build</a></li>
       </ul>
 
-      <a class="toc_title" href="#">
+      <a class="toc_title" href="#advanced-features">
         Advanced Features
       </a>
 
@@ -52,7 +52,7 @@
         <li>- <a href="#heroku-deployment">Heroku Buildpack</a></li>
       </ul>
 
-      <a class="toc_title" href="#">
+      <a class="toc_title" href="#customizing-lineman">
         Customizing Lineman
       </a>
 
@@ -61,7 +61,7 @@
         <li>- <a href="#removing-tasks">Removing Grunt Tasks</a></li>
       </ul>
 
-      <a href="#" class="toc_title">
+      <a class="toc_title" href="#about-lineman">
         About Lineman
       </a>
 
@@ -73,22 +73,24 @@
     </div>
 
     <div class="container">
-      <img src="http://blog.testdouble.com/img/logo.png" style="width: 36px;" alt="Lineman">
+      <img src="/img/td-logo.png" style="width: 36px;" alt="Test Double">
       <span class="title" style="margin-left: .3em; padding-left: .4em; border: 0 solid #231f20; border-left-width: 1px; text-transform: lowercase;font-size: 3em;">Lineman</span>
-      <p>
-        <a href="http://github.com/testdouble/lineman/">Lineman</a> is a command-line utility that is hyper-focused on helping web developers build first-class JavaScript web applications. Lineman provides a thin wrapper around a number of client-side productivity tools (primarily <a href="http://www.expressjs.com">Express</a>, <a href="http://www.gruntjs.org">Grunt</a>, and <a href="http://github.com/airportyh/testem">Testem</a>), with the goal of helping developers focus on writing awesome webapps instead of worrying about workflow configuration.
-      </p>
-      <p>
-        The project is
-        <a href="http://github.com/testdouble/lineman/">hosted on GitHub</a>.
-        You can report bugs and discuss features on the
-        <a href="http://github.com/testdouble/lineman/issues">issues page</a>
-        or send tweets to <a href="http://twitter.com/linemanjs">@linemanjs</a>.
-      </p>
+      <div id="intro">
+        <p>
+          <a href="http://github.com/testdouble/lineman/">Lineman</a> is a command-line utility that is hyper-focused on helping web developers build first-class JavaScript web applications. Lineman provides a thin wrapper around a number of client-side productivity tools (primarily <a href="http://www.expressjs.com">Express</a>, <a href="http://www.gruntjs.org">Grunt</a>, and <a href="http://github.com/airportyh/testem">Testem</a>), with the goal of helping developers focus on writing awesome webapps instead of worrying about workflow configuration.
+        </p>
+        <p>
+          The project is
+          <a href="http://github.com/testdouble/lineman/">hosted on GitHub</a>.
+          You can report bugs and discuss features on the
+          <a href="http://github.com/testdouble/lineman/issues">issues page</a>
+          or send tweets to <a href="http://twitter.com/linemanjs">@linemanjs</a>.
+        </p>
 
-      <p>
-      <i>Lineman is open-source technology from <a href="http://testdouble.com/">Test Double, LLC</a>.</i>
-      </p>
+        <p>
+          <i>Lineman is open-source technology from <a href="http://testdouble.com/">Test Double, LLC</a>.</i>
+        </p>
+      </div>
       <div id="documentation">
         <%= yield %>
       </div>
