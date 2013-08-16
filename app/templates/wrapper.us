@@ -8,68 +8,89 @@
     <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
     <link rel="stylesheet" type="text/css" href="/css/app.css" media="all" />
   </head>
-  <body class="dark">
-    <div id="wrapper">
-      <div class="max-width">
-        <div id="sideNav">
-          <nav class="site">
-            <ul>
-              <li><a href="http://github.com/testdouble/lineman">Source on Github</a></li>
-            </ul>
-          </nav>
-          <div id="pageNav">
-            <h4>Understanding Lineman</h4>
-            <ul>
-              <li><a href="#what-is-lineman">What is Lineman?</a></li>
-              <li><a href="#fat-client">What does "fat-client" mean?</a></li>
-              <li><a href="#first-class">What is a "first-class" web app?</a></li>
-              <li><a href="#task-lifecycle">How does Lineman work?</a></li>
-            </ul>
-            <h4>Working with Lineman</h4>
-            <ul>
-              <li><a href="#getting-started">Getting Started</a></li>
-              <li><a href="#project-templates">Project Templates</a></li>
-              <li><a href="#directory-structure">Project Directory Structure</a></li>
-              <li><a href="#develop-test-build">Develop, Test, Build</a></li>
-            </ul>
-            <h4>Advanced Features</h4>
-            <ul>
-              <li><a href="#api-integration">API Integration</a></li>
-              <li><a href="#push-state">HTML5 PushState Simulation</a></li>
-              <li><a href="#lineman-pages">Lineman Pages</a></li>
-              <li><a href="#heroku-deployment">Heroku Buildpack</a></li>
-            </ul>
-            <h4>Customizing Lineman</h4>
-            <ul>
-              <li><a href="#adding-tasks">Adding Grunt Tasks</a></li>
-              <li><a href="#removing-tasks">Removing Grunt Tasks</a></li>
-            </ul>
-            <h4>About Lineman</h4>
-            <ul>
-              <li><a href="#the-name">The Name</a></li>
-              <li><a href="#license">License</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div id="site">
-        <header id="main-header">
-          <div class="max-width">
-            <img src="/img/lineman-logo.png" alt="Lineman" id="lineman-logo">
-            <hgroup>
-              <h1>Lineman</h1>
-              <p>Build awesome web-apps, easily.</p>
-            </hgroup>
-            <nav>
-              <ul>
-                <li><a id="download-btn" href="#">npm install -g lineman</a></li>
-              </ul>
-            </nav><a id="slide-menu-button" class="topcoat-icon-button--large--quiet"><span class="topcoat-icon--large topcoat-icon--menu-stack"></span></a>
-          </div>
-        </header>
-        <div id="content" class="max-width">
-          <%= yield %>
-        </div>
+  <body>
+    <div id="sidebar" class="interface">
+
+      <img id="lineman-logo" src="/img/lineman-logo.png" alt="Lineman" style="margin-left: 23px;">
+
+      <a class="toc_title" href="#">
+        Lineman <span class="version">(0.11.6)</span>
+      </a>
+      <ul class="toc_section">
+        <li>» <a href="http://github.com/testdouble/lineman">GitHub Repository</a></li>
+      </ul>
+
+      <a class="toc_title" href="#">
+        Understanding Lineman
+      </a>
+
+      <ul class="toc_section">
+        <li>- <a href="#fat-client">What does "fat-client" mean?</a></li>
+        <li>- <a href="#first-class">What is a "first-class" web app?</a></li>
+        <li>- <a href="#task-lifecycle">How does Lineman work?</a></li>
+      </ul>
+
+      <a class="toc_title" href="#">
+        Working with Lineman
+      </a>
+
+      <ul class="toc_section">
+        <li>- <a href="#getting-started">Getting Started</a></li>
+        <li>- <a href="#project-templates">Project Templates</a></li>
+        <li>- <a href="#directory-structure">Project Directory Structure</a></li>
+        <li>- <a href="#develop-test-build">Develop, Test, Build</a></li>
+      </ul>
+
+      <a class="toc_title" href="#">
+        Advanced Features
+      </a>
+
+      <ul class="toc_section">
+        <li>- <a href="#api-integration">API Integration</a></li>
+        <li>- <a href="#push-state">HTML5 PushState Simulation</a></li>
+        <li>- <a href="#lineman-pages">Lineman Pages</a></li>
+        <li>- <a href="#heroku-deployment">Heroku Buildpack</a></li>
+      </ul>
+
+      <a class="toc_title" href="#">
+        Customizing Lineman
+      </a>
+
+      <ul class="toc_section">
+        <li>- <a href="#adding-tasks">Adding Grunt Tasks</a></li>
+        <li>- <a href="#removing-tasks">Removing Grunt Tasks</a></li>
+      </ul>
+
+      <a href="#" class="toc_title">
+        About Lineman
+      </a>
+
+      <ul class="toc_section">
+        <li>- <a href="#the-name">The Name</a></li>
+        <li>- <a href="#license">License</a></li>
+      </ul>
+
+    </div>
+
+    <div class="container">
+      <img src="http://blog.testdouble.com/img/logo.png" style="width: 36px;" alt="Lineman">
+      <span class="title" style="margin-left: .3em; padding-left: .4em; border: 0 solid #231f20; border-left-width: 1px; text-transform: lowercase;font-size: 3em;">Lineman</span>
+      <p>
+        <a href="http://github.com/testdouble/lineman/">Lineman</a> is a command-line utility that is hyper-focused on helping web developers build first-class JavaScript web applications. Lineman provides a thin wrapper around a number of client-side productivity tools (primarily <a href="http://www.expressjs.com">Express</a>, <a href="http://www.gruntjs.org">Grunt</a>, and <a href="http://github.com/airportyh/testem">Testem</a>), with the goal of helping developers focus on writing awesome webapps instead of worrying about workflow configuration.
+      </p>
+      <p>
+        The project is
+        <a href="http://github.com/testdouble/lineman/">hosted on GitHub</a>.
+        You can report bugs and discuss features on the
+        <a href="http://github.com/testdouble/lineman/issues">issues page</a>
+        or send tweets to <a href="http://twitter.com/linemanjs">@linemanjs</a>.
+      </p>
+
+      <p>
+      <i>Lineman is open-source technology from <a href="http://testdouble.com/">Test Double, LLC</a>.</i>
+      </p>
+      <div id="documentation">
+        <%= yield %>
       </div>
       <footer class="site">
         <ul>
@@ -85,9 +106,8 @@
         </ul>
       </footer>
     </div>
-    <script src=""></script>
+
     <script type="text/javascript" src="/js/app.js"></script>
-    <script src="//use.edgefonts.net/source-sans-pro:n3,n4,n6;source-code-pro:n3.js"></script>
   </body>
 </html>
 
