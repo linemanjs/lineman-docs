@@ -7,7 +7,7 @@ ordinal: 4
 
 #### Task Lifecycle
 
-Lineman provides a small abstraction layer around Grunts task automation features. Lineman comes with a number of [default tasks](https://github.com/testdouble/lineman/blob/master/config/application.coffee#L11...L14) that have been pre-configured. These tasks are organized into buckets that make up the core lifecycle of Lineman as it acts in development and production:
+Lineman is a thin abstraction layer on top of Grunt's task automation features. Lineman comes with a number of [default tasks](https://github.com/testdouble/lineman/blob/master/config/application.coffee#L11...L14) that have been pre-configured. These tasks are organized into lifecycle phases that identify at which point during the build each task should run. Those phases can be illustrated as a set of ordered tasks, like this:
 
 ```coffeescript
 appTasks:
@@ -15,6 +15,8 @@ appTasks:
   dev:    ["server", "watch"]
   dist:   ["uglify", "cssmin", "images:dist", "webfonts:dist", "pages:dist"]
 ```
+
+The "common" phase run during almost most Lineman actions (e.g. during both `lineman run` & `lineman build`). The "dev" phase only runs during development tasks (e.g. `lineman run`). The "dist" phase only runs during production ("distribution") tasks (e.g. `lineman build`).
 
 #### Task Configuration
 
