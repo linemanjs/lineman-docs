@@ -11,9 +11,19 @@ Once you've generated a directory structure with the default project template, o
 
 In your command-line interface:
 
-1. Navigate to your project directory: `cd {project-directory}`
-2. Start Linemans development environment: `lineman run`
-3. Point your web-browser at `http://localhost:8000`
+1. Navigate to your project directory:
+
+  ```bash
+  $ cd your-project
+  ```
+
+2. Start Linemans development environment:
+
+  ```bash
+  $ lineman run
+  ```
+
+3. Point your web-browser at _http://localhost:8000_
 
 <img src="http://placehold.it/850x100&text=image of `lineman run` here" />
 
@@ -23,7 +33,11 @@ Lineman integrates a full-featured test runner called Testem. Whether you are us
 
 In another command-line interface session:
 
-1. Start the tests: `lineman spec`
+1. Start the tests:
+
+  ```bash
+  $ lineman spec
+  ```
 
 <img src="http://placehold.it/850x100&text=image of `lineman spec` here" />
 
@@ -31,7 +45,11 @@ In another command-line interface session:
 
 Lineman comes pre-configured to execute your tests using Testems "CI" mode which will run tests against Phantom JS and yield output in TAP13 format which is easy for CI environments (such as Jenkins) to consume:
 
-1. Execute tests in ci mode: `lineman spec-ci`
+1. Execute tests in ci mode:
+
+  ```bash
+  $ lineman spec-ci
+  ```
 
 <img src="http://placehold.it/850x100&text=image of `lineman spec-ci` here" />
 
@@ -39,7 +57,11 @@ Lineman comes pre-configured to execute your tests using Testems "CI" mode which
 
 When you are ready to bundle up your fat-client app and add the compiled JavaScript, HTML, CSS, Images, and Webfonts to your static web server you can use Linemans build command:
 
-1. Build for production: `lineman build`
+1. Build for production:
+
+  ```bash
+  $ lineman build
+  ```
 
 Lineman will use Grunt to execute a number of tasks and generate your production bundle in the `dist` folder at the root of your project directory.
 

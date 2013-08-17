@@ -7,7 +7,9 @@ ordinal: 4
 
 Deploying your app to [heroku](http://heroku.com) couldn't be easier. Once you have the [heroku toolbelt](https://toolbelt.heroku.com) installed, simply run this from your project:
 
-`heroku create --stack cedar --buildpack http://github.com/testdouble/heroku-buildpack-lineman.git`
+```bash
+$ heroku create --stack cedar --buildpack http://github.com/testdouble/heroku-buildpack-lineman.git
+```
 
 Now, whenever you `git push heroku`, our [custom buildpack](http://github.com/testdouble/heroku-buildpack-lineman) will build your project with lineman and then start serving your minified site assets with apache!
 
