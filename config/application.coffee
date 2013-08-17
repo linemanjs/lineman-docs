@@ -5,6 +5,9 @@
 # You can find the parent object in: node_modules/lineman/config/application.coffee
 #
 
+grunt = require('../node_modules/grunt-markdown-blog/node_modules/grunt')
+pkg   =  grunt.file.readJSON('package.json')
+
 module.exports = require(process.env['LINEMAN_MAIN']).config.extend "application",
 
   loadNpmTasks: ["grunt-markdown-blog"]
@@ -15,6 +18,7 @@ module.exports = require(process.env['LINEMAN_MAIN']).config.extend "application
       title: "Lineman"
       description: "Build awesome web apps, easily."
       url: "http://www.linemanjs.com"
+      lineman_version: pkg.dependencies.lineman
       layouts:
         wrapper: "app/templates/wrapper.us"
         index: "app/templates/index.us"

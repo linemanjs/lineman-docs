@@ -14,7 +14,7 @@
       <img id="lineman-logo" src="/img/lineman-logo.png" alt="Lineman" style="margin-left: 23px;">
 
       <a class="toc_title" href="#">
-        Lineman <span class="version">(0.11.6)</span>
+        Lineman <span class="version">(<%= site.lineman_version %>)</span>
       </a>
       <ul class="toc_section">
         <li>» <a href="http://github.com/testdouble/lineman">GitHub Repository</a></li>
