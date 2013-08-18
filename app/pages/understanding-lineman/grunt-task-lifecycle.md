@@ -16,7 +16,7 @@ appTasks:
   dist:   ["uglify", "cssmin", "images:dist", "webfonts:dist", "pages:dist"]
 ```
 
-The "common" phase run during almost most Lineman actions (e.g. during both `lineman run` & `lineman build`). The "dev" phase only runs during development tasks (e.g. `lineman run`). The "dist" phase only runs during production ("distribution") tasks (e.g. `lineman build`).
+The "common" phase is run during most Lineman actions (e.g. during both `lineman run` & `lineman build`). The "dev" phase only runs during development tasks (e.g. `lineman run`). The "dist" phase only runs during production ("distribution") tasks (e.g. `lineman build`).
 
 #### Task Configuration
 
@@ -30,7 +30,7 @@ Lineman splits each of these concerns into two separate files:
 1. `<your-application>/config/application{.js,.coffee}`
 2. `<your-application>/config/files{.js,.coffee}`
 
-Lineman allows you to override both its [default task options](https://github.com/testdouble/lineman/blob/master/config/application.coffee) and [default file locations](https://github.com/testdouble/lineman/blob/master/config/files.coffee) within your apps configuration.
+Lineman allows you to override both its [default task _options_](https://github.com/testdouble/lineman/blob/master/config/application.coffee) and [default _file_ locations](https://github.com/testdouble/lineman/blob/master/config/files.coffee) within your apps configuration.
 
 ```javascript
 // <your-application>/config/application.js
