@@ -11,7 +11,7 @@ A lack of consistency in the way client-side code is managed across server-side 
 
 We built Lineman to craft a developer experience that would liberate our client-side assets from the opinions of each server-side framework and allow them to stand on their own as first-class citizens. At its core, Lineman is a fully realized client-side workflow based on sensible task defaults and a simple transparent proxy that allows web developers to completely decouple their client-side from the server-side. In addition, it produces happiness by building assets, mocking servers, and running specs on every file change.
 
-This separation allows fat-client web applications to stand on their own as first-class citizens and grants significant flexibility to decouple client and server.
+This separation allows rich-client web applications to stand on their own as first-class citizens and grants significant flexibility to decouple client and server.
 
 <img src="http://placehold.it/250x200&text=RICH-CLIENT">
 <img src="http://placehold.it/250x200&text=API-PROXY">

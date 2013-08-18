@@ -55,7 +55,7 @@ Lineman comes pre-configured to execute your tests using Testems "CI" mode which
 
 #### Build Tool (Grunt)
 
-When you are ready to bundle up your fat-client app and add the compiled JavaScript, HTML, CSS, Images, and Webfonts to your static web server you can use Linemans build command:
+When you are ready to bundle up your rich-client app and add the compiled JavaScript, HTML, CSS, Images, and Webfonts to your static web server you can use Linemans build command:
 
 1. Build for production:
 

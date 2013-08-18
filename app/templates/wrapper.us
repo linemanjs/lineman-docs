@@ -25,7 +25,7 @@
       </a>
 
       <ul class="toc_section">
-        <li>- <a href="#fat-client">What does "fat-client" mean?</a></li>
+        <li>- <a href="#rich-client">What does "rich-client" mean?</a></li>
         <li>- <a href="#first-class">What is a "first-class" web app?</a></li>
         <li>- <a href="#task-lifecycle">How does Lineman work?</a></li>
       </ul>
