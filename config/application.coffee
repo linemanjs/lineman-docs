@@ -7,7 +7,7 @@
 
 grunt           = require('../node_modules/grunt-markdown-blog/node_modules/grunt')
 pkg             = grunt.file.readJSON('package.json')
-lineman_version = pkg.dependencies.lineman.split("~")[1]
+lineman_version = pkg.dependencies.lineman
 
 module.exports = require(process.env['LINEMAN_MAIN']).config.extend "application",
 
