@@ -71,7 +71,7 @@ Done, without errors.
 
 #### Build Tool (Grunt)
 
-When you are ready to bundle up your rich-client app and add the compiled JavaScript, HTML, CSS, Images, and Webfonts to your static web server you can use Linemans build command:
+When you are ready to bundle up your modern-client app and add the compiled JavaScript, HTML, CSS, Images, and Webfonts to your static web server you can use Linemans build command:
 
 ```bash
 $ lineman build

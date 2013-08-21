@@ -5,7 +5,7 @@ slug: "api-integration"
 ordinal: 1
 ---
 
-Many rich-client apps require some interaction with a server, and no developer could be expected to write working code without either faking the server-side or plugging the client and server together. Lineman offers support for both!
+Most web apps require some interaction with a server, and no developer could be expected to write working code without either faking the server-side or plugging the client and server together. Lineman offers support for both!
 
 #### API Stubbing
 
