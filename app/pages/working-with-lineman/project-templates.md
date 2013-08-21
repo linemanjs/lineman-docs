@@ -37,18 +37,18 @@ For more info, check out http://github.com/testdouble/lineman
 
 If you already know that you want to use a particular client-side framework (like Backbone, Ember, or Angular) we have a few framework-templates floating around to help you get up-and-running even _more_ faster.
 
-<a href="https://github.com/davemo/lineman-backbone-template">
-  <img src="http://placehold.it/160&text=Backbone" />
+<a class="framework-logo" href="https://github.com/davemo/lineman-backbone-template" title="Lineman Backbone Template">
+  <img src="/img/backbone-logo.png" />
 </a>
-<a href="https://github.com/davemo/lineman-angular-template">
-  <img src="http://placehold.it/160&text=Angular" />
+<a class="framework-logo" href="https://github.com/davemo/lineman-angular-template" title="Lineman Angular Template">
+  <img src="/img/angular-logo.png" />
 </a>
-<a href="https://github.com/searls/lineman-ember-template">
-  <img src="http://placehold.it/160&text=Ember" />
+<a class="framework-logo" href="https://github.com/searls/lineman-ember-template" title="Lineman Ember Template">
+  <img src="/img/ember-logo.png" />
 </a>
-<a href="https://github.com/testdouble/lineman-lib-template">
-  <img src="http://placehold.it/160&text=JS-Lib" />
+<a class="framework-logo" href="https://github.com/testdouble/lineman-lib-template" title="Lineman Lib Template">
+  <img src="/img/js-lib-logo.png" />
 </a>
-<a href="https://github.com/testdouble/lineman-blog">
-  <img src="http://placehold.it/160&text=Blog" />
+<a class="framework-logo" href="https://github.com/testdouble/lineman-blog" title="Lineman Blog Template">
+  <img src="/img/blog-logo.png" />
 </a>
