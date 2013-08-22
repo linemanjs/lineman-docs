@@ -19,7 +19,7 @@ This separation allows client-side assets to stand on their own as first-class c
    +-----------------------+                      +------------------------+
    |     Modern Client     |                      |        API Server      |
    |-----------------------|      apiProxy        |------------------------|
-   | Lineman:              | <--------+---------> | Any Backend Platform:  |
+   | Lineman:              | <------------------> | Any Backend Platform:  |
    | - Any Client MV*      |                      | - Security             |
    | - Test Execution      |         OR           | - Auth                 |
    | - CI Integration      |                      | - API Routing          |
@@ -38,7 +38,7 @@ This separation allows client-side assets to stand on their own as first-class c
   |     Modern Client     |                      |    Production Application Server      |
   |-----------------------|   `lineman build`    +-----------------------+---------------|
   |                       |                      |                       |               |
-  | Lineman:              | ---------+---------> | build artifact: +     | web front end:|
+  | Lineman:              | -------------------> | build artifact: +     | web front end:|
   | - Any Client MV*      |                      | ./dist          |     | - nginx/apache|
   | - Test Execution      |                      | - index.html    |     | - app server  |
   | - CI Integration      |                      | - app.css       +-------+ public/html |
