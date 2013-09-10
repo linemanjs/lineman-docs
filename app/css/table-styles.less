@@ -1,0 +1,42 @@
+section.content table {
+  border-collapse:collapse;
+  text-align:left;
+  width:100%;
+  border: 1px solid #ccc;
+
+  td, th {
+    padding:3px 10px;
+  }
+
+  thead {
+    th {
+      background:0;
+      background-color:#272822;
+      color:white;
+      &:first-child {
+        border: none;
+      }
+    }
+  }
+
+  tbody {
+    td {
+      color:#333;
+      border-left:1px solid #CCC;
+      font-size:12px;
+      font-weight:400;
+      &:first-child {
+        border-left: none;
+      }
+    }
+    tr {
+      border-top: 1px solid #ccc;
+      &:last-child td {
+        border-bottom: none;
+      }
+      &:nth-of-type(even) {
+        background: #f9f9f9;
+      }
+    }
+  }
+}
