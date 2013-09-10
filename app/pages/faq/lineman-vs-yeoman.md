@@ -13,7 +13,7 @@ We are commonly asked, "How does Lineman differ from Yeoman?". Firstly, Lineman 
 |---------------------------|------------------------|-------------------------|
 | Generators                | 1 builtin scaffold,    | No builtin scaffolds,   |
 |                           | clonable templates, no | installable generators, |
-|                           | sub-generators.        | many sub-generators.    |
+|                           | sub-generators         | many sub-generators     |
 |---------------------------|------------------------|-------------------------|
 | Command Line Interface    | Wrapped utilities that | Unwrapped utilities that|
 |                           | are accessed via CLI.  | are accessed via their  |
@@ -37,12 +37,12 @@ We are commonly asked, "How does Lineman differ from Yeoman?". Firstly, Lineman 
 |                           | `lineman spec-ci`      |                         |
 |---------------------------|------------------------|-------------------------|
 | Grunt Task Lifecycle      | preconfigured phases:  |                         |
-|                           | app, dev, build        |   generator specific    |
+|                           | common, dev, dist      |   generator specific    |
 |                           | `files` & `application`|                         |
 |                           | config files           |                         |
 |---------------------------|------------------------|-------------------------|
 | Dependency Graph          | intentionally shallow  | generator specific      |
-|                           | and lightweight.       | often deep and heavy.   |
+|                           | and lightweight        | often deep and heavy    |
 |------------------------------------------------------------------------------|
 | Cute ASCII Text Greeter   |           -            | snazzy wizard based CLI |
 |------------------------------------------------------------------------------|
@@ -53,6 +53,8 @@ We are commonly asked, "How does Lineman differ from Yeoman?". Firstly, Lineman 
 |------------------------------------------------------------------------------|
 | Builtin Dev Server        | `lineman run`          |   generator specific    |
 |                           |  spins up express.js   |                         |
+|------------------------------------------------------------------------------|
+| Directory Structure       | Common across all      |   generator specific    |
+|                           | project templates      |                         |
 +------------------------------------------------------------------------------+
-
 ```
