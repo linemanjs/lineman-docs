@@ -61,12 +61,16 @@
         <li>- <a href="#removing-tasks">Removing Grunt Tasks</a></li>
       </ul>
 
-      <a class="toc_title" href="#faq">
+      <a class="toc_title" href="#questions-and-answers">
         Questions &amp; Answers
       </a>
 
       <ul class="toc_section">
         <li>- <a href="#lineman-vs-yeoman">Lineman vs Yeoman</a></li>
+        <li>- <a href="#sub-generators">Generators</a></li>
+        <li>- <a href="#wrapping-libs">Wrapping Libraries</a></li>
+        <li>- <a href="#test-runner">Test Runner</a></li>
+        <li>- <a href="#package-management">Package Management</a></li>
       </ul>
 
 
