@@ -11,5 +11,4 @@ ordinal: 1
    ```bash
    $ npm install -g lineman
    ```
-3. Install [Phantom JS](http://www.phantomjs.org) and make sure it's on your
-   _PATH_
+3. Install [Phantom JS](http://www.phantomjs.org) and make sure it's on your _PATH_

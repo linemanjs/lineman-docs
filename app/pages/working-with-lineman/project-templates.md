@@ -5,16 +5,13 @@ slug: "project-templates"
 ordinal: 2
 ---
 
-If you aren't sure what client-side framework you want to use for your app you
-may want to start with Lineman's default, framework-agnostic, project template.
-You can generate this project template from the command line:
+If you aren't sure what client-side framework you want to use for your app you may want to start with Lineman's default, framework-agnostic, project template. You can generate this project template from the command line:
 
 ```bash
 $ lineman new your-project
 ```
 
-Lineman then gives you some instructions on how to get up and running with this
-default template:
+Lineman then gives you some instructions on how to get up and running with this default template:
 
 ```bash
     _
@@ -38,9 +35,7 @@ Getting started:
 For more info, check out http://github.com/testdouble/lineman
 ```
 
-If you already know that you want to use a particular client-side framework
-(like Backbone, Ember, or Angular) we have a few framework-templates floating
-around to help you get up-and-running even _more_ faster.
+If you already know that you want to use a particular client-side framework (like Backbone, Ember, or Angular) we have a few framework-templates floating around to help you get up-and-running even _more_ faster.
 
 <a class="framework-logo" href="https://github.com/davemo/lineman-backbone-template" title="Lineman Backbone Template">
   <img src="/img/backbone-logo.png" />
