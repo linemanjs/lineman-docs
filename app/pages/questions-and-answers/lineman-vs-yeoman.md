@@ -5,7 +5,12 @@ slug: "lineman-vs-yeoman"
 ordinal: 1
 ---
 
-We are commonly asked, "How does Lineman differ from Yeoman?". Firstly, Lineman is a tool designed primarily to ease the creation of modern-client web applications. It is client-side framework agnostic, but opinionated about the workflow and tools developers use to _build_ any modern-client apps. However, given there is _some_ overlap between the two tools we thought it best to lay things out with a feature grid:
+We are commonly asked, "How does Lineman differ from Yeoman?". Firstly, Lineman
+is a tool designed primarily to ease the creation of modern-client web
+applications. It is client-side framework agnostic, but opinionated about the
+workflow and tools developers use to _build_ any modern-client apps. However,
+given there is _some_ overlap between the two tools we thought it best to lay
+things out with a feature grid:
 
 | Feature | Lineman | Yeoman |
 |:--|:--|:--|
