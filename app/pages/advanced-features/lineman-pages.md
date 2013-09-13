@@ -7,7 +7,7 @@ ordinal: 3
 
 Lineman allows you to generate multiple HTML files using its "pages" feature.
 You _could_ use this to create an app with separate pages, or customize
-Linemans tasks to generate separate web apps for each HTML file. Any template
+Lineman's tasks to generate separate web apps for each HTML file. Any template
 files placed within `app/pages` will automatically be compiled to HTML and
 placed within the root of `dist` when built. Here's an example:
 

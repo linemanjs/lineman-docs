@@ -6,7 +6,7 @@ ordinal: 2
 ---
 
 If you aren't sure what client-side framework you want to use for your app you
-may want to start with Linemans default, framework-agnostic, project template.
+may want to start with Lineman's default, framework-agnostic, project template.
 You can generate this project template from the command line:
 
 ```bash

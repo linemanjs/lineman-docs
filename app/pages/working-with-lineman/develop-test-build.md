@@ -18,7 +18,7 @@ In your command-line interface:
    ```bash
    $ cd your-project
    ```
-2. Start Linemans development environment:
+2. Start Lineman's development environment:
 
    ```bash
    $ lineman run
@@ -83,13 +83,13 @@ Done, without errors.
 
 When you are ready to bundle up your modern-client app and add the compiled
 JavaScript, HTML, CSS, Images, and Webfonts to your static web server you can
-use Linemans build command:
+use Lineman's build command:
 
 ```bash
 $ lineman build
 ```
 
-This will execute all of Linemans `common` and `dist` phase tasks:
+This will execute all of Lineman's `common` and `dist` phase tasks:
 
 ```bash
 Running "common" task
