@@ -7,27 +7,32 @@ ordinal: 4
 
 #### Web Server (Express JS)
 
-Once you've generated a directory structure with the default project template, or cloned a framework project template then it's time to get developing with Lineman.
+Once you've generated a directory structure with the default project template,
+or cloned a framework project template then it's time to get developing with
+Lineman.
 
 In your command-line interface:
 
 1. Navigate to your project directory:
 
-  ```bash
-  $ cd your-project
-  ```
-
+   ```bash
+   $ cd your-project
+   ```
 2. Start Linemans development environment:
 
-  ```bash
-  $ lineman run
-  ```
+   ```bash
+   $ lineman run
+   ```
 
 3. Point your web-browser at _http://localhost:8000_
 
 #### Test Runner (Testem)
 
-Lineman integrates a full-featured test runner called Testem. Whether you are using the default project template, or have cloned a framework project template you will have a set of default tests within the `spec` directory. Lineman works by compiling all your files whenever it detects a change on disk during `lineman run`.
+Lineman integrates a full-featured test runner called Testem. Whether you are
+using the default project template, or have cloned a framework project template
+you will have a set of default tests within the `spec` directory. Lineman works
+by compiling all your files whenever it detects a change on disk during
+`lineman run`.
 
 In another command-line interface session:
 
@@ -35,7 +40,9 @@ In another command-line interface session:
 $ lineman spec
 ```
 
-By default, Lineman configures Testem to re-run tests on every file change and automatically launches Chrome to execute tests using a generated Jasmine specrunner html file:
+By default, Lineman configures Testem to re-run tests on every file change and
+automatically launches Chrome to execute tests using a generated Jasmine
+specrunner html file:
 
 ```bash
 TESTEM SCRIPTS!
@@ -49,13 +56,16 @@ Chrome 28: ✔ 1 tests complete.
 
 #### Continuous Integration (Testem)
 
-Lineman comes pre-configured to execute your tests using Testems "CI" mode which will run tests against Phantom JS and yield output in TAP13 format which is easy for CI environments (such as Jenkins) to consume:
+Lineman comes pre-configured to execute your tests using Testems "CI" mode
+which will run tests against Phantom JS and yield output in TAP13 format which
+is easy for CI environments (such as Jenkins) to consume:
 
 ```bash
 $ lineman spec-ci
 ```
 
-The `spec-ci` command will compile your app, and then run tests within PhantomJS 1.9:
+The `spec-ci` command will compile your app, and then run tests within
+PhantomJS 1.9:
 
 ```bash
 Running "spec-ci" task
@@ -71,7 +81,9 @@ Done, without errors.
 
 #### Build Tool (Grunt)
 
-When you are ready to bundle up your modern-client app and add the compiled JavaScript, HTML, CSS, Images, and Webfonts to your static web server you can use Linemans build command:
+When you are ready to bundle up your modern-client app and add the compiled
+JavaScript, HTML, CSS, Images, and Webfonts to your static web server you can
+use Linemans build command:
 
 ```bash
 $ lineman build
@@ -137,7 +149,9 @@ dist/index.html generated from app/pages/index.us
 Done, without errors.
 ```
 
-Lineman will use Grunt to execute a number of tasks and generate your production bundle in the `dist` folder at the root of your project directory, here's what the output looks like:
+Lineman will use Grunt to execute a number of tasks and generate your
+production bundle in the `dist` folder at the root of your project directory,
+here's what the output looks like:
 
 ```bash
 $ ls -la dist/
