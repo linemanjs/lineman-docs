@@ -37,13 +37,13 @@ For more info, check out http://github.com/testdouble/lineman
 
 If you already know that you want to use a particular client-side framework (like Backbone, Ember, or Angular) we have a few framework-templates floating around to help you get up-and-running even _more_ faster.
 
-<a class="framework-logo" href="https://github.com/davemo/lineman-backbone-template" title="Lineman Backbone Template">
+<a class="framework-logo" href="https://github.com/testdouble/lineman-backbone-template" title="Lineman Backbone Template">
   <img src="/img/backbone-logo.png" />
 </a>
-<a class="framework-logo" href="https://github.com/davemo/lineman-angular-template" title="Lineman Angular Template">
+<a class="framework-logo" href="https://github.com/testdouble/lineman-angular-template" title="Lineman Angular Template">
   <img src="/img/angular-logo.png" />
 </a>
-<a class="framework-logo" href="https://github.com/searls/lineman-ember-template" title="Lineman Ember Template">
+<a class="framework-logo" href="https://github.com/testdouble/lineman-ember-template" title="Lineman Ember Template">
   <img src="/img/ember-logo.png" />
 </a>
 <a class="framework-logo" href="https://github.com/testdouble/lineman-lib-template" title="Lineman Lib Template">
