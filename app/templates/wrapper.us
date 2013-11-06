@@ -14,7 +14,7 @@
       <img id="lineman-logo" src="/img/lineman-logo.png" alt="Lineman" style="margin-left: 23px;">
 
       <a class="toc_title" href="#">
-        Lineman <span class="version">(<%= site.lineman_version %>)</span>
+        Lineman
       </a>
       <ul class="toc_section">
         <li>» <a href="http://github.com/testdouble/lineman">GitHub Repository</a></li>
@@ -93,6 +93,17 @@
         <p>
           <a href="http://github.com/testdouble/lineman/">Lineman</a> is a command-line utility that is hyper-focused on helping web developers build first-class JavaScript web applications. Lineman provides a thin wrapper around a number of client-side productivity tools (primarily <a href="http://www.expressjs.com">Express</a>, <a href="http://www.gruntjs.org">Grunt</a>, and <a href="http://github.com/airportyh/testem">Testem</a>), with the goal of helping developers focus on writing awesome web apps instead of worrying about workflow configuration.
         </p>
+
+        <blockquote class="featured well">
+          <p class="bright">npm install -g lineman</p>
+        </blockquote>
+        <blockquote class="sub well">
+          <p class="bright">lineman new</p>
+          <p class="bright">lineman run</p>
+          <p class="bright">lineman spec</p>
+          <p class="bright">lineman build</p>
+        </blockquote>
+
         <p>
           The project is
           <a href="http://github.com/testdouble/lineman/">hosted on GitHub</a>.
@@ -104,6 +115,7 @@
         <p>
           <i>Lineman is open-source technology from <a href="http://testdouble.com/">Test Double, LLC</a>.</i>
         </p>
+
       </div>
       <div id="documentation">
         <%= yield %>
