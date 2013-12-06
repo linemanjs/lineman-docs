@@ -25,6 +25,7 @@
       </a>
 
       <ul class="toc_section">
+        <li>- <a href="#introduction">Building Happiness</a></li>
         <li>- <a href="#modern-client">What does "modern-client" mean?</a></li>
         <li>- <a href="#first-class">What is a "first-class" web app?</a></li>
         <li>- <a href="#task-lifecycle">How does Lineman work?</a></li>
