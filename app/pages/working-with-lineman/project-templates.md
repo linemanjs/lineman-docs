@@ -13,7 +13,7 @@ $ lineman new your-project
 
 Lineman then gives you some instructions on how to get up and running with this default template:
 
-```bash
+<pre><code>
     _
    | |
    | |     _ _ __   ___ _ __ ___   __ _ _ __
@@ -33,7 +33,7 @@ Getting started:
     * "lineman spec" runs specs from the "specs" directory using testem
 
 For more info, check out http://github.com/testdouble/lineman
-```
+</code></pre>
 
 If you already know that you want to use a particular client-side framework (like Backbone, Ember, or Angular) we have a few framework-templates floating around to help you get up-and-running even _more_ faster:
 
