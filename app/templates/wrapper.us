@@ -89,8 +89,11 @@
 
     <div class="container">
       <img src="/img/td-logo.png" style="width: 36px;" alt="Test Double">
-      <span class="title" style="margin-left: .3em; padding-left: .4em; border: 0 solid #231f20; border-left-width: 1px; text-transform: lowercase;font-size: 3em;">Lineman</span>
+      <span class="title" style="margin-left: .3em; padding-left: .4em; border: 0 solid #231f20; border-left-width: 1px; font-size: 3em;">Lineman</span>
       <div id="intro">
+        <p class="lede">
+          Lineman takes <strong>everything you love</strong> about building server-side applications, and <strong>brings joy</strong> to your client-side applications
+        </p>
         <p>
           <a href="http://github.com/testdouble/lineman/">Lineman</a> is a command-line utility that is hyper-focused on helping web developers build first-class JavaScript web applications. Lineman provides a thin wrapper around a number of client-side productivity tools (primarily <a href="http://www.expressjs.com">Express</a>, <a href="http://www.gruntjs.org">Grunt</a>, and <a href="http://github.com/airportyh/testem">Testem</a>), with the goal of helping developers focus on writing awesome web apps instead of worrying about workflow configuration.
         </p>
