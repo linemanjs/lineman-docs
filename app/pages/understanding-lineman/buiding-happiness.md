@@ -10,6 +10,8 @@ We accomplish this by establishing a narrow set of conventions and curating defa
 
 For a broad overview of the motivations behind Lineman, consider watching this [introductory presentation](http://blog.testdouble.com/posts/2013-11-12-1st-class-web-development-with-lineman.html):
 
-<iframe width="420" height="315" src="http://www.youtube.com/embed/KERJkJNV5nI" frameborder="0" allowfullscreen></iframe>
+<div class='embed-container'>
+  <iframe class="u-video" frameborder="0" src="http://www.youtube.com/embed/KERJkJNV5nI" allowfullscreen></iframe>
+</div>
 
 To get started using Lineman right away, [continue here](#getting-started). Otherwise, read on.

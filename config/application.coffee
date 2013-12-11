@@ -48,6 +48,8 @@ module.exports = require(process.env['LINEMAN_MAIN']).config.extend "application
     common: "pages:dev"
     dist: "pages:dist"
 
+  enableSass: true
+
   watch:
     markdown:
       files: ["app/posts/*.md", "app/templates/*.us", "app/pages/**/*.md" ]

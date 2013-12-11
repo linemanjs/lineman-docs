@@ -1,8 +1,9 @@
-section.content table {
+section.documentation table {
   border-collapse:collapse;
   text-align:left;
   width:100%;
   border: 1px solid #ccc;
+  table-layout: fixed;
 
   td, th {
     padding:3px 10px;

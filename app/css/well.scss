@@ -1,0 +1,41 @@
+.well {
+  margin: 0px 30px 0px 30px;
+  &.sub {
+    margin-bottom: 30px;
+  }
+
+  padding: 20px;
+  background: black;
+  color: white;
+  font-size: 3em;
+  &.sub {
+    background: #999;
+    p {
+      margin-left: 10px;
+      &:before {
+        content: "> "
+      }
+    }
+  }
+  h1 {
+    font-size: 1em;
+  }
+  p {
+    margin: 0px;
+    line-height: 1.5em;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .well {
+    margin: 0px 20px 0px 20px;
+    font-size: 1.7em;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .well {
+    margin: 0px 10px 0px 10px;
+    font-size: 1.2em;
+  }
+}

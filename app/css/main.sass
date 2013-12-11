@@ -1,0 +1,25 @@
+@import bourbon/bourbon
+
+@import general
+@import lineman
+@import table
+@import well
+
+code
+  font-family: 'Source Code Pro', monospace
+  font-size: 0.8em
+
+p > code, li > code
+  padding: 0px 2px 0px 2px
+  background-color: $lightGrey
+  word-break: break-word
+
+pre
+  margin-bottom: 12px
+
+  code
+    border-radius: 0px
+    overflow: auto
+    white-space: pre
+    word-wrap: normal
+    word-break: none

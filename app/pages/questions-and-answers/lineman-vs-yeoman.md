@@ -12,7 +12,7 @@ We are commonly asked, "How does Lineman differ from Yeoman?". Firstly, Lineman 
 | Generators                | 1 builtin scaffold, clonable templates, no sub-generators       | No builtin scaffolds, installable generators, many sub-generators |
 | Command Line Interface    | Wrapped utilities that are accessed via CLI ie: `lineman grunt` | Unwrapped utilities that are accessed via their CLI ie: `grunt`   |
 | HTML5 pushState Simulator | builtin and enabled via `config/application` | - |
-| API Stubbing/Prototyping | builtin and enabled via `config/server` | - |
+| API Stubbing Prototyping | builtin and enabled via `config/server` | - |
 | API Proxy | builtin and enabled via `config/application` | - |
 | Test Runner | testem, configured for dev and ci mode with `lineman spec`<br> and `lineman spec-ci` | - |
 | Grunt Task Lifecycle | preconfigured phases: `common, dev, dist`, split into `config/files` and `config/application` | generator specific |

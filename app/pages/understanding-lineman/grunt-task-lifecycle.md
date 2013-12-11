@@ -35,17 +35,22 @@ Lineman allows you to override both its [default task _options_](https://github.
 ```javascript
 // <your-application>/config/application.js
 
-module.exports = require(process.env['LINEMAN_MAIN']).config.extend('application', {
-  //Override application configuration here. Common examples follow in the comments.
-});
+module.exports = function(lineman) {
+  //Override application configuration here
+  return {};
+};
+
 ```
+
+And:
 
 ```javascript
 // <your-application/config/files.js
 
-module.exports = require(process.env['LINEMAN_MAIN']).config.extend('files', {
+module.exports = function(lineman) {
   //Override file patterns here
-});
+  return {};
+};
 ```
 
 #### Which Configuration Wins?

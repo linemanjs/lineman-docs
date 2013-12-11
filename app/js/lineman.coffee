@@ -1,0 +1,2 @@
+$ ->
+  new Sidebar().init()
