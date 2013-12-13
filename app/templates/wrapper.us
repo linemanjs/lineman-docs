@@ -14,92 +14,94 @@
     <a id="logo-link" href="http://www.testdouble.com"><span class="logo dark skm">Test Double</span></a>
     <span id="right-menu" class="menu dark skm">Menu</span>
 
-    <nav id="sidr-right" class="sidr right">
-      <span class="close skm">Close</span>
+    <div id="sidebar">
+      <nav id="sidr-right" class="sidr right">
+        <span class="close skm">Close</span>
 
-      <p class="pages">
-        <img id="lineman-logo" src="/img/lineman-logo.png" alt="Lineman">
-        <a class="toc_title" href="#">Lineman</a>
-        <ul class="toc_section">
-          <li>» <a href="http://github.com/testdouble/lineman">GitHub Repository</a></li>
-        </ul>
+        <p class="pages">
+          <img id="lineman-logo" src="/img/lineman-logo.png" alt="Lineman">
+          <a class="toc_title" href="#">Lineman</a>
+          <ul class="toc_section">
+            <li>» <a href="http://github.com/testdouble/lineman">GitHub Repository</a></li>
+          </ul>
 
-        <a class="toc_title" href="#understanding-lineman">
-          Understanding Lineman
-        </a>
+          <a class="toc_title" href="#understanding-lineman">
+            Understanding Lineman
+          </a>
 
-        <ul class="toc_section">
-          <li>- <a href="#introduction">Building Happiness</a></li>
-          <li>- <a href="#modern-client">What does "modern-client" mean?</a></li>
-          <li>- <a href="#first-class">What is a "first-class" web app?</a></li>
-          <li>- <a href="#task-lifecycle">How does Lineman work?</a></li>
-        </ul>
+          <ul class="toc_section">
+            <li>- <a href="#introduction">Building Happiness</a></li>
+            <li>- <a href="#modern-client">What does "modern-client" mean?</a></li>
+            <li>- <a href="#first-class">What is a "first-class" web app?</a></li>
+            <li>- <a href="#task-lifecycle">How does Lineman work?</a></li>
+          </ul>
 
-        <a class="toc_title" href="#working-with-lineman">
-          Working with Lineman
-        </a>
+          <a class="toc_title" href="#working-with-lineman">
+            Working with Lineman
+          </a>
 
-        <ul class="toc_section">
-          <li>- <a href="#getting-started">Getting Started</a></li>
-          <li>- <a href="#project-templates">Project Templates</a></li>
-          <li>- <a href="#directory-structure">Project Directory Structure</a></li>
-          <li>- <a href="#develop-test-build">Develop, Test, Build</a></li>
-        </ul>
+          <ul class="toc_section">
+            <li>- <a href="#getting-started">Getting Started</a></li>
+            <li>- <a href="#project-templates">Project Templates</a></li>
+            <li>- <a href="#directory-structure">Project Directory Structure</a></li>
+            <li>- <a href="#develop-test-build">Develop, Test, Build</a></li>
+          </ul>
 
-        <a class="toc_title" href="#advanced-features">
-          Advanced Features
-        </a>
+          <a class="toc_title" href="#advanced-features">
+            Advanced Features
+          </a>
 
-        <ul class="toc_section">
-          <li>- <a href="#api-integration">API Integration</a></li>
-          <li>- <a href="#push-state">HTML5 PushState Simulation</a></li>
-          <li>- <a href="#lineman-pages">Lineman Pages</a></li>
-          <li>- <a href="#heroku-deployment">Heroku Buildpack</a></li>
-        </ul>
+          <ul class="toc_section">
+            <li>- <a href="#api-integration">API Integration</a></li>
+            <li>- <a href="#push-state">HTML5 PushState Simulation</a></li>
+            <li>- <a href="#lineman-pages">Lineman Pages</a></li>
+            <li>- <a href="#heroku-deployment">Heroku Buildpack</a></li>
+          </ul>
 
-        <a class="toc_title" href="#customizing-lineman">
-          Customizing Lineman
-        </a>
+          <a class="toc_title" href="#customizing-lineman">
+            Customizing Lineman
+          </a>
 
-        <ul class="toc_section">
-          <li>- <a href="#adding-tasks">Adding Grunt Tasks</a></li>
-          <li>- <a href="#removing-tasks">Removing Grunt Tasks</a></li>
-        </ul>
+          <ul class="toc_section">
+            <li>- <a href="#adding-tasks">Adding Grunt Tasks</a></li>
+            <li>- <a href="#removing-tasks">Removing Grunt Tasks</a></li>
+          </ul>
 
-        <a class="toc_title" href="#questions-and-answers">
-          Questions &amp; Answers
-        </a>
+          <a class="toc_title" href="#questions-and-answers">
+            Questions &amp; Answers
+          </a>
 
-        <ul class="toc_section">
-          <li>- <a href="#lineman-vs-yeoman">Lineman vs Yeoman</a></li>
-          <li>- <a href="#sub-generators">Generators</a></li>
-          <li>- <a href="#wrapping-libs">Wrapping Libraries</a></li>
-          <li>- <a href="#test-runner">Test Runner</a></li>
-          <li>- <a href="#package-management">Package Management</a></li>
-        </ul>
+          <ul class="toc_section">
+            <li>- <a href="#lineman-vs-yeoman">Lineman vs Yeoman</a></li>
+            <li>- <a href="#sub-generators">Generators</a></li>
+            <li>- <a href="#wrapping-libs">Wrapping Libraries</a></li>
+            <li>- <a href="#test-runner">Test Runner</a></li>
+            <li>- <a href="#package-management">Package Management</a></li>
+          </ul>
 
 
-        <a class="toc_title" href="#about-lineman">
-          About Lineman
-        </a>
+          <a class="toc_title" href="#about-lineman">
+            About Lineman
+          </a>
 
-        <ul class="toc_section">
-          <li>- <a href="#the-name">The Name</a></li>
-          <li>- <a href="#license">License</a></li>
-        </ul>
-      </p>
-      <p class="services">
-        <a href="http://twitter.com/testdouble"><span class="twitter skm">Twitter</span></a>
-        <a href="http://github.com/testdouble"><span class="github skm">Github</a></a>
-      </p>
-      <p class="contact-info">
-        614.349.4279
-        <br />
-        <a href="mailto:hello@testdouble.com">hello@testdouble.com</a>
-        <br />
-        Columbus, Ohio
-      </p>
-    </nav>
+          <ul class="toc_section">
+            <li>- <a href="#the-name">The Name</a></li>
+            <li>- <a href="#license">License</a></li>
+          </ul>
+        </p>
+        <p class="services">
+          <a href="http://twitter.com/testdouble"><span class="twitter skm">Twitter</span></a>
+          <a href="http://github.com/testdouble"><span class="github skm">Github</a></a>
+        </p>
+        <p class="contact-info">
+          614.349.4279
+          <br />
+          <a href="mailto:hello@testdouble.com">hello@testdouble.com</a>
+          <br />
+          Columbus, Ohio
+        </p>
+      </nav>
+    </div>
 
     <div class="content">
       <h1>Lineman.js</h1>
