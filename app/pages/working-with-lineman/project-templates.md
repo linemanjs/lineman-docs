@@ -37,23 +37,25 @@ For more info, check out http://github.com/testdouble/lineman
 
 If you already know that you want to use a particular client-side framework (like Backbone, Ember, or Angular) we have a few framework-templates floating around to help you get up-and-running even _more_ faster:
 
-<a href="https://github.com/testdouble/lineman-backbone-template" target="_blank">
-  <div class="templates backbone"></div>
-  <h4>Lineman Backbone Template</h4>
-</a>
-<a href="https://github.com/testdouble/lineman-angular-template" target="_blank">
-  <div class="templates angular"></div>
-  <h4>Lineman Angular Template</h4>
-</a>
-<a href="https://github.com/testdouble/lineman-ember-template" target="_blank">
-  <div class="templates ember"></div>
-  <h4>Lineman Ember Template</h4>
-</a>
-<a href="https://github.com/testdouble/lineman-lib-template" target="_blank">
-  <div class="templates lib"></div>
-  <h4>Lineman Lib Template</h4>
-</a>
-<a href="https://github.com/testdouble/lineman-blog" target="_blank">
-  <div class="templates blog"></div>
-  <h4>Lineman Blog Template</h4>
-</a>
+<div class="template-projects">
+  <a href="https://github.com/testdouble/lineman-backbone-template" target="_blank">
+    <div class="templates backbone"></div>
+    <h4>Lineman Backbone Template</h4>
+  </a>
+  <a href="https://github.com/testdouble/lineman-angular-template" target="_blank">
+    <div class="templates angular"></div>
+    <h4>Lineman Angular Template</h4>
+  </a>
+  <a href="https://github.com/testdouble/lineman-ember-template" target="_blank">
+    <div class="templates ember"></div>
+    <h4>Lineman Ember Template</h4>
+  </a>
+  <a href="https://github.com/testdouble/lineman-lib-template" target="_blank">
+    <div class="templates lib"></div>
+    <h4>Lineman Lib Template</h4>
+  </a>
+  <a href="https://github.com/testdouble/lineman-blog" target="_blank">
+    <div class="templates blog"></div>
+    <h4>Lineman Blog Template</h4>
+  </a>
+</div>
