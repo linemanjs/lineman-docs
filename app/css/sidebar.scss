@@ -1,7 +1,15 @@
 @import "colors";
 
+.menu {
+  position: fixed;
+}
+
 #sidebar nav {
   padding: 15px 0 30px 20px;
+
+  .close {
+    position: fixed;
+  }
 
   a.toc_title, a.toc_title:visited {
     display: block;
