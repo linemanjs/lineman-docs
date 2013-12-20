@@ -18,7 +18,7 @@ We are commonly asked, "How does Lineman differ from Yeoman?". Firstly, Lineman 
 | Grunt Task Lifecycle | preconfigured phases: `common, dev, dist`, split into `config/files` and `config/application` | generator specific |
 | Dependency Graph | intentionally shallow and lightweight | generator specific, often deep and heavy |
 | Cute ASCII Text Greeter | - | snazzy wizard based CLI |
-| Package Management | - | bower |
+| Package Management | none builtin but supports various, including bower, via extensions | bower |
 | SourceMap Generation | builtin, defaults to `grunt-concat-sourcemap` | - |
 | Dev Server | `lineman run`, spins up express.js | generator specific |
 | Directory Structure | common across project templates | generator specific |
