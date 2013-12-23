@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html class="td">
   <head>
     <title><%= site.title %> | <%= site.description %></title>
     <meta charset="utf-8">
@@ -10,7 +10,7 @@
     <link rel="icon" href="img/favicon.png">
     <link rel="apple-touch-icon" sizes="152x152" href="img/apple-touch-icon.png">
   </head>
-  <body>
+  <body class="td">
     <a id="logo-link" href="http://www.testdouble.com"><span class="logo dark skm">Test Double</span></a>
     <span id="right-menu" class="menu dark skm">Menu</span>
 
