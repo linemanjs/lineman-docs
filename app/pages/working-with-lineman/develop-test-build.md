@@ -36,11 +36,22 @@ $ lineman spec
 By default, Lineman configures Testem to re-run tests on every file change and automatically launches Chrome to execute tests using a generated Jasmine specrunner html file:
 
 ```bash
-TESTEM SCRIPTS!
-# Open the URL below in a browser to connect.
+TEST'EM 'SCRIPTS!
+Open the URL below in a browser to connect.
 http://localhost:7357/
+━━━━━━━━━━━━━━┓
+  Chrome 31.0 ┃
+    1/1 ✔     ┃
+              ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+✔ 1 tests complete.
 
-Chrome 28: ✔ 1 tests complete.
+
+
+
+
+
+
+
 
 [Press ENTER to run tests; q to quit]
 ```
@@ -137,10 +148,15 @@ Done, without errors.
 
 Lineman will use Grunt to execute a number of tasks and generate your production bundle in the `dist` folder at the root of your project directory, here's what the output looks like:
 
-```bash
-$ ls -la dist/
+``` bash
+$ tree dist
 
-css
-index.html
-js
+dist
+├── css
+│   └── app.css
+├── favicon.ico
+├── index.html
+└── js
+    └── app.js
+
 ```
