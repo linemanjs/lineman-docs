@@ -1,0 +1,139 @@
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Source+Code+Pro:600)
+
+$black: #1A1919
+$red: #64192A
+$timing-with-delay: 2s
+
+*
+  +box-sizing(border-box)
+
+html, body
+  font-family: 'Source Sans Pro', sans-serif
+  height: 100%
+
+.background-container
+  position: fixed
+  z-index: -9999
+  width: 100%
+  min-height: 100%
+  background: url(/img/bg.jpg) no-repeat
+  background-size: cover
+  background-position: 50% 0
+  +animation(bg-fade-in 2s)
+
+.heart
+  width: 118px
+  margin: auto
+
+.heart-icon
+  +transform-origin(50% 0)
+  +position(relative, 100px 0 0 0)
+
+.dividers
+  +clearfix
+  width: 4px
+  margin: 92px auto 0
+
+.red-divider, .black-divider
+  float: left
+  width: 2px
+  height: 2000px
+  +animation(divider 6s linear)
+
+.red-divider
+  background: $red
+
+.black-divider
+  background: $black
+
+.rails-logo, .lineman-logo
+  width: 29%
+  position: relative
+  top: 60px
+  +clearfix
+
+  .page-logo
+    +hide-text
+    padding: 0
+    margin: auto
+    background-repeat: no-repeat
+    background: transparent
+    display: block
+
+  a.button
+    font-family: 'Source Sans Pro', sans-serif
+    font-size: 20px
+    font-weight: 700
+    text-transform: uppercase
+    text-align: center
+    text-decoration: none
+    background: rgba(white, 0)
+    padding: 7px 0 4px
+    margin: 20px auto 0
+    display: block
+    border: 2px solid
+    border-radius: 5px
+    cursor: pointer
+    +transition(all .2s)
+
+.rails-logo
+  float: left
+  margin: 0 0 0 15%
+  right: 5%
+  +animation(rails-slide $timing-with-delay)
+
+
+  .page-logo
+    +size(141px 180px)
+    +retina-image(/img/rails-logo, 100%)
+    margin: 0 auto 21px
+
+
+  a.button
+    width: 188px
+    color: $red
+    border-color: $red
+
+    &:hover
+      background: $red
+      color: white
+
+
+.lineman-logo
+  float: right
+  margin: 0 15% 0 0
+  left: 5%
+  +animation(lineman-slide $timing-with-delay)
+
+
+  .page-logo
+    +size(163px 181px)
+    +retina-image(/img/lineman-rails-logo, 100%)
+
+  a.button
+    width: 168px
+    border-color: $black
+    color: $black
+
+    &:hover
+      background: $black
+      color: white
+
++keyframes(bg-fade-in)
+  0%, 50%
+    opacity: 0
+
++keyframes(divider)
+  0%, 17%
+    height: 0px
+
++keyframes(rails-slide)
+  0%, 50%
+    opacity: 0
+    +transform(translateX(-100px))
+
++keyframes(lineman-slide)
+  0%, 50%
+    opacity: 0
+    +transform(translateX(100px))
+

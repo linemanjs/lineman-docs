@@ -11,14 +11,31 @@
     <link rel="apple-touch-icon" sizes="152x152" href="img/apple-touch-icon.png">
   </head>
   <body>
+    <div class="background-container"></div>
+    <div class="rails-logo">
+      <h1 class="page-logo">ruby on rails</h1>
+      <button>ruby on rails</button>
+    </div>
+    <div class="lineman-logo">
+      <h1 class="page-logo">lineman</h1>
+      <button>Lineman.js</button>
+    </div>
+    <div class="heart">
+      <svg class="heart-icon" width="118px" height="104px" viewBox="0 0 118 104" xmlns="http://www.w3.org/2000/svg"
+        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+            <path d="M58,19.0207082 C58,19.0207082 86.4168959,-12.2273884 108.897436,12.558379 C131.377976,37.3441454 86.6045834,81.358037 58,102" id="Path-123" stroke="#1A1919" stroke-width="4"></path>
+            <path d="M3,19.0207082 C3,19.0207082 31.4168959,-12.2273884 53.8974359,12.558379 C76.3779763,37.3441454 31.6045834,81.358037 3,102" id="Path-123-copy" stroke="#64192A" stroke-width="4" transform="translate(31.500000, 52.500000) scale(-1, 1) translate(-31.500000, -52.500000) "></path>
+        </g>
+      </svg>
+      <div class="dividers">
+        <div class="red-divider"></div>
+        <div class="black-divider"></div>
+      </div>
+      <div class="rails-info">
 
+      </div>
 
-
-
-
-
-    <!-- Awesome stuff goes here -->
-
+    </div>
 
 
 
@@ -26,6 +43,31 @@
 
     <script type="text/javascript" src="/js/app.js"></script>
     <script type="text/javascript">
+      $(function(){
+        function drawPath(className, duration, delay){
+          $(className).each(function(){
+            var path = this
+            var length = path.getTotalLength();
+            // Set up the starting positions
+            path.style.strokeDasharray = length + ' ' + length;
+            path.style.strokeDashoffset = length;
+            // Trigger a layout so styles are calculated & the browser
+            // picks up the starting position before animating
+            path.getBoundingClientRect();
+            // Define our transition
+            path.style.transition = path.style.WebkitTransition =
+              'stroke-dashoffset ' + duration + delay + ' linear';
+            // Go!
+            path.style.strokeDashoffset = '0';
+          });
+        }
+
+        $(function(){
+          drawPath('svg path', '1s', '.0s');
+        });
+      });
+
+
       var _gaq = _gaq || [];
       _gaq.push(['_setAccount', 'UA-32958269-1']);
       _gaq.push(['_setDomainName', 'linemanjs.com']);
