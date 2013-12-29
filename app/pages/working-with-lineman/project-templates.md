@@ -54,7 +54,7 @@ If you already know that you want to use a particular client-side framework (lik
     <div class="templates lib"></div>
     <h4>Lineman Lib Template</h4>
   </a>
-  <a href="https://github.com/testdouble/lineman-blog" target="_blank">
+  <a href="https://github.com/testdouble/lineman-blog-template" target="_blank">
     <div class="templates blog"></div>
     <h4>Lineman Blog Template</h4>
   </a>
