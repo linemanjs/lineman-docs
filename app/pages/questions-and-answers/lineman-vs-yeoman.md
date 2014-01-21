@@ -22,3 +22,4 @@ We are commonly asked, "How does Lineman differ from Yeoman?". Firstly, Lineman 
 | SourceMap Generation | builtin, defaults to `grunt-concat-sourcemap` | - |
 | Dev Server | `lineman run`, spins up express.js | generator specific |
 | Directory Structure | common across project templates | generator specific |
+| License | [MIT](http://choosealicense.com/licenses/mit/) | [BSD](http://choosealicense.com/licenses/bsd/) |
