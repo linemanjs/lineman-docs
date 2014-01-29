@@ -2,7 +2,7 @@
 
 $black: #1A1919
 $red: #64192A
-$timing-with-delay: 2s
+$timing-with-delay: 1s
 
 *
   +box-sizing(border-box)
@@ -14,37 +14,45 @@ html, body
 .background-container
   position: fixed
   z-index: -9999
+  overflow: hidden
   width: 100%
   min-height: 100%
   background: url(/img/bg.jpg) no-repeat
   background-size: cover
   background-position: 50% 0
-  +animation(bg-fade-in 2s)
+  +animation(bg-fade-in 1s)
+
+.logos
+  +clearfix
 
 .heart
-  width: 118px
+  width: 100%
   margin: auto
+  +position(absolute, 100px 0 0 0)
 
 .heart-icon
   +transform-origin(50% 0)
-  +position(relative, 100px 0 0 0)
+  +position(relative, 92px 0 0 50%)
+  +transform(translateX(-50%))
 
 .dividers
   +clearfix
   width: 4px
   margin: 92px auto 0
+  +position(absolute, 100px 0 0 50%)
+  +transform(translateX(-50%))
 
 .red-divider, .black-divider
   float: left
   width: 2px
-  height: 2000px
-  +animation(divider 6s linear)
+  height: 800px
+  +animation(divider 2s linear)
 
 .red-divider
-  background: $red
+  +linear-gradient(rgba($red, 1), rgba($red, 0), $fallback: transparent)
 
 .black-divider
-  background: $black
+  +linear-gradient(rgba($black, 1), rgba($black, 0), $fallback: transparent)
 
 .rails-logo, .lineman-logo
   width: 29%
@@ -119,8 +127,81 @@ html, body
       background: $black
       color: white
 
+.code
+  margin: 100px 0 0
+  width: 100%
+  +clearfix
+
+.rails-code
+  float: left
+  margin: 0 0 0 7%
+  right: 5%
+  width: 35%
+
+  .code-block
+    code
+      border-radius: 4px
+      padding: 15px
+
+    h3
+      color: $red
+
+.lineman-code
+  float: right
+  width: 35%
+  margin: 0 7% 0 0
+  left: 5%
+
+  .code-block
+    code
+      border-radius: 4px
+      padding: 15px
+
+.code-block
+
+  &:nth-child(1)
+    +animation(code-fade1 2s)
+
+  &:nth-child(2)
+    +animation(code-fade2 2.1s)
+
+  &:nth-child(3)
+    +animation(code-fade3 2.2s)
+
+  &:nth-child(4)
+    +animation(code-fade4 2.4s)
+
+  &:nth-child(5)
+    +animation(code-fade5 2.6s)
+
+.code-spacer
+  float: right
+  width: 100%
+  left: 5%
+  height: 132px
+
++keyframes(code-fade1)
+  0%, 15%
+    opacity: 0
+
++keyframes(code-fade2)
+  0%, 30%
+    opacity: 0
+
++keyframes(code-fade3)
+  0%, 45%
+    opacity: 0
+
++keyframes(code-fade4)
+  0%, 55%
+    opacity: 0
+
++keyframes(code-fade5)
+  0%, 65%
+    opacity: 0
+
 +keyframes(bg-fade-in)
-  0%, 50%
+  0%
     opacity: 0
 
 +keyframes(divider)
@@ -128,12 +209,12 @@ html, body
     height: 0px
 
 +keyframes(rails-slide)
-  0%, 50%
+  0%, 25%
     opacity: 0
     +transform(translateX(-80px))
 
 +keyframes(lineman-slide)
-  0%, 50%
+  0%, 25%
     opacity: 0
     +transform(translateX(80px))
 

@@ -12,14 +12,16 @@
   </head>
   <body>
     <div class="background-container"></div>
-    <div class="rails-logo">
-      <h1 class="page-logo">ruby on rails</h1>
-      <a href="#" class="button">ruby on rails</a>
-    </div>
-    <div class="lineman-logo">
-      <h1 class="page-logo">lineman</h1>
-      <a href="#" class="button">Lineman.js</a>
-    </div>
+    <section class="logos">
+      <div class="rails-logo">
+        <h1 class="page-logo">ruby on rails</h1>
+        <a href="#" class="button">ruby on rails</a>
+      </div>
+      <div class="lineman-logo">
+        <h1 class="page-logo">lineman</h1>
+        <a href="#" class="button">Lineman.js</a>
+      </div>
+    </section>
     <div class="heart">
       <svg class="heart-icon" width="118px" height="104px" viewBox="0 0 118 104" xmlns="http://www.w3.org/2000/svg"
         <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -36,6 +38,60 @@
     </div>
 
     <section class="code">
+    <div class="rails-code">
+      <div class="code-block">
+        <h3>Add this to your rails Gemfile:</h3>
+        <pre>
+          <code>gem 'rails-lineman'</code>
+        </pre>
+      </div>
+      <div class="code-block">
+        <h3>Add this to your rails environment.rb file:</h3>
+        <pre>
+          <code>config.rails_lineman = 'some/dir'</code>
+        </pre>
+      </div>
+      <div class="code-block">
+        <h3>Boot your Rails server:</h3>
+        <pre>
+          <code>$ bundle exec rails s</code>
+        </pre>
+      </div>
+      <div class="code-block">
+        <h3>Add this to your application.erb file:</h3>
+        <pre>
+          <code><%= javascript_include_tag 'lineman/app' =%></code>
+        </pre>
+      </div>
+      <div class="code-block">
+        <h3>Run this rake task in your terminal:</h3>
+        <pre>
+          <code>$ rake assets:precompile</code>
+        </pre>
+      </div>
+    </div>
+    <div class="lineman-code">
+      <div class="code-block">
+        <h3>Add this to your rails Gemfile:</h3>
+        <pre>
+          <code>gem 'rails-lineman'</code>
+        </pre>
+      </div>
+      <div class="code-spacer"></div>
+      <div class="code-block">
+        <h3>Add this to your rails environment.rb file:</h3>
+        <pre>
+          <code>config.rails_lineman = 'some/dir'</code>
+        </pre>
+      </div>
+      <div class="code-block">
+        <h3>Boot your Rails server:</h3>
+        <pre>
+          <code>$ bundle exec rails s</code>
+        </pre>
+      </div>
+    </div>
+
     </section>
     <!-- Dammit, Lineman. Go home you're drunk. -->
 
@@ -62,7 +118,7 @@
         }
 
         $(function(){
-          drawPath('svg path', '1s', '.0s');
+          drawPath('svg path', '.35s', '.0s');
         });
       });
 
