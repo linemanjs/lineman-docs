@@ -1,11 +1,15 @@
 {
-  "name": "some-lineman-blog",
+  "name": "lineman-docs",
   "title": "An HTML/JS/CSS app",
   "version": "0.0.1",
   "private": true,
   "author": {
     "name": "John Doe",
     "company": "ACME, Inc."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/linemanjs/lineman-docs.git"
   },
   "dependencies": {
     "lineman": ">= 0.14.5",

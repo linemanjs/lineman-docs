@@ -22,7 +22,7 @@
           <img id="lineman-logo" src="/img/lineman-logo.png" alt="Lineman">
           <a class="toc_title" href="#">Lineman</a>
           <ul class="toc_section">
-            <li>» <a href="http://github.com/testdouble/lineman">GitHub Repository</a></li>
+            <li>» <a href="http://github.com/linemanjs/lineman">GitHub Repository</a></li>
           </ul>
 
           <a class="toc_title" href="#understanding-lineman">
@@ -115,7 +115,7 @@
       <div class="documentation-wrap">
         <div id="intro">
           <p>
-            <a href="http://github.com/testdouble/lineman/">Lineman</a> is a command-line utility that is hyper-focused on helping web developers build first-class JavaScript web applications. Lineman provides a thin wrapper around a number of client-side productivity tools (primarily <a href="http://www.expressjs.com">Express</a>, <a href="http://www.gruntjs.org">Grunt</a>, and <a href="http://github.com/airportyh/testem">Testem</a>), with the goal of helping developers focus on writing awesome web apps instead of worrying about workflow configuration.
+            <a href="http://github.com/linemanjs/lineman/">Lineman</a> is a command-line utility that is hyper-focused on helping web developers build first-class JavaScript web applications. Lineman provides a thin wrapper around a number of client-side productivity tools (primarily <a href="http://www.expressjs.com">Express</a>, <a href="http://www.gruntjs.org">Grunt</a>, and <a href="http://github.com/airportyh/testem">Testem</a>), with the goal of helping developers focus on writing awesome web apps instead of worrying about workflow configuration.
           </p>
 
           <div class="featured well">
@@ -130,9 +130,9 @@
 
           <p>
             The project is
-            <a href="http://github.com/testdouble/lineman/">hosted on GitHub</a>.
+            <a href="http://github.com/linemanjs/lineman/">hosted on GitHub</a>.
             You can report bugs and discuss features on the
-            <a href="http://github.com/testdouble/lineman/issues">issues page</a>
+            <a href="http://github.com/linemanjs/lineman/issues">issues page</a>
             or send tweets to <a href="http://twitter.com/linemanjs">@linemanjs</a>.
           </p>
 

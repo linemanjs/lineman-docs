@@ -7,7 +7,7 @@ ordinal: 4
 
 #### Task Lifecycle
 
-Lineman is a thin abstraction layer on top of Grunt's task automation features. Lineman comes with a number of [default tasks](https://github.com/testdouble/lineman/blob/f13bde48c639569be3d50ec148e2c0e018d66ba0/config/application.coffee#L11...L14) that have been pre-configured. These tasks are organized into lifecycle phases that identify at which point during the build each task should run. Those phases can be illustrated as a set of ordered tasks, like this:
+Lineman is a thin abstraction layer on top of Grunt's task automation features. Lineman comes with a number of [default tasks](https://github.com/linemanjs/lineman/blob/f13bde48c639569be3d50ec148e2c0e018d66ba0/config/application.coffee#L11...L14) that have been pre-configured. These tasks are organized into lifecycle phases that identify at which point during the build each task should run. Those phases can be illustrated as a set of ordered tasks, like this:
 
 ```coffeescript
 appTasks:
@@ -30,7 +30,7 @@ Lineman splits each of these concerns into two separate files:
 1. `<your-application>/config/application{.js,.coffee}`
 2. `<your-application>/config/files{.js,.coffee}`
 
-Lineman allows you to override both its [default task _options_](https://github.com/testdouble/lineman/blob/master/config/application.coffee) and [default _file_ locations](https://github.com/testdouble/lineman/blob/master/config/files.coffee) within your apps configuration.
+Lineman allows you to override both its [default task _options_](https://github.com/linemanjs/lineman/blob/master/config/application.coffee) and [default _file_ locations](https://github.com/linemanjs/lineman/blob/master/config/files.coffee) within your apps configuration.
 
 ```javascript
 // <your-application>/config/application.js
