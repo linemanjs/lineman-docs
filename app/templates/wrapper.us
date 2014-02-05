@@ -44,7 +44,7 @@
             <li>- <a href="#getting-started">Getting Started</a></li>
             <li>- <a href="#project-templates">Project Templates</a></li>
             <li>- <a href="#directory-structure">Project Directory Structure</a></li>
-            <li>- <a href="#develop-test-build">Develop, Test, Build</a></li>
+            <li>- <a href="#develop-test-build-deploy">Develop, Test, Build, Deploy</a></li>
           </ul>
 
           <a class="toc_title" href="#advanced-features">
@@ -65,6 +65,7 @@
           <ul class="toc_section">
             <li>- <a href="#adding-tasks">Adding Grunt Tasks</a></li>
             <li>- <a href="#removing-tasks">Removing Grunt Tasks</a></li>
+            <li>- <a href="#custom-deployment-methods">Custom Deployment Methods</a></li>
           </ul>
 
           <a class="toc_title" href="#questions-and-answers">
@@ -126,6 +127,7 @@
             <p class="bright">lineman run</p>
             <p class="bright">lineman spec</p>
             <p class="bright">lineman build</p>
+            <p class="bright">lineman deploy</p>
           </div>
 
           <p>
