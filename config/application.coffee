@@ -24,7 +24,6 @@ module.exports = require(process.env['LINEMAN_MAIN']).config.extend "application
         posts: "app/posts/*.md"
         pages: "app/pages/**/*.md"
         index: "index.html"
-        rss: "index.xml"
 
     dev:
       dest: "generated"
