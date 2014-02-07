@@ -44,9 +44,6 @@ module.exports = require(process.env['LINEMAN_MAIN']).config.extend "application
   prependTasks:
     common: "markdown:dev"
     dist: "markdown:dist"
-  removeTasks:
-    common: "pages:dev"
-    dist: "pages:dist"
 
   enableSass: true
 

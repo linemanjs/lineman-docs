@@ -11,3 +11,6 @@ module.exports = require(process.env["LINEMAN_MAIN"]).config.extend "files",
       "vendor/js/jquery.js"
       "vendor/js/**/*.js"
     ]
+
+  pages:
+    source: "app/pages/static/**/*.*"
