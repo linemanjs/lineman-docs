@@ -8,7 +8,7 @@
         return page.attributes.ordinal;
       })
       .reduce(function(html, page) {
-        return html + site.htmlFor(page);
+        return html + site.pages.htmlFor(site, page);
       }, "")
       .value();
 
