@@ -41,23 +41,20 @@
     <section class="code">
     <div class="lineman-code">
       <div class="code-block">
-        <h3>Add this to your rails Gemfile:</h3>
-        <pre>
-          <code>gem 'rails-lineman'</code>
-        </pre>
+        <h3>Install Lineman's Rails plugin:</h3>
+        <pre><code>$ npm install --save-dev lineman-rails</code></pre>
+        <p>
+          This will set up some additional static routes and enable the API proxy. It will also disable the pages task.
+        </p>
       </div>
-      <div class="code-spacer"></div>
+      <div class="code-spacer big"></div>
       <div class="code-block">
-        <h3>Add this to your rails environment.rb file:</h3>
-        <pre>
-          <code>config.rails_lineman = 'some/dir'</code>
-        </pre>
+        <h3>Start your lineman development server:</h3>
+        <pre><code>$ lineman run</code></pre>
       </div>
       <div class="code-block">
-        <h3>Boot your Rails server:</h3>
-        <pre>
-          <code>$ bundle exec rails s</code>
-        </pre>
+        <h3>During development, use Lineman's server:</h3>
+        <pre><code>$ open http://localhost:8000</code></pre>
       </div>
     </div>
     <section class="mobile-logos">
@@ -68,34 +65,29 @@
     </section>
     <div class="rails-code">
       <div class="code-block">
-        <h3>Add this to your rails Gemfile:</h3>
-        <pre>
-          <code>gem 'rails-lineman'</code>
-        </pre>
+        <h3>Add this to your Rails app's Gemfile:</h3>
+        <pre><code>gem 'rails-lineman'</code></pre>
       </div>
       <div class="code-block">
-        <h3>Add this to your rails environment.rb file:</h3>
-        <pre>
-          <code>config.rails_lineman = 'some/dir'</code>
-        </pre>
+        <h3>Tell the gem where to look for your Lineman app:</h3>
+        <pre><code>config.rails_lineman.lineman_project_location = "my/app"</code></pre>
+        <p>
+          Alternatively, rails-lineman will look for an environment variable named <strong>LINEMAN_PROJECT_LOCATION</strong>.
+        </p>
+      </div>
+      <div class="code-block">
+        <h3>Include your Lineman CSS &amp; JavaScript:</h3>
+        <pre><code><%= stylesheet_link_tag "lineman/app" %>
+<%= javascript_include_tag "lineman/app" %></code></pre>
       </div>
       <div class="code-block">
         <h3>Boot your Rails server:</h3>
-        <pre>
-          <code>$ bundle exec rails s</code>
-        </pre>
+        <pre><code>$ bundle exec rails s</code></pre>
       </div>
+      <div class="code-spacer small"></div>
       <div class="code-block">
-        <h3>Add this to your application.erb file:</h3>
-        <pre>
-          <code><%= javascript_include_tag 'lineman/app' =%></code>
-        </pre>
-      </div>
-      <div class="code-block">
-        <h3>Run this rake task in your terminal:</h3>
-        <pre>
-          <code>$ rake assets:precompile</code>
-        </pre>
+        <h3>When you deploy, Lineman assets will be built &amp; included:</h3>
+        <pre><code>$ rake assets:precompile</code></pre>
       </div>
     </div>
 
