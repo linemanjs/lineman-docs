@@ -2,7 +2,7 @@
 
 $black: #1A1919
 $red: #64192A
-$timing-with-delay: 1s
+$timing: 1s
 
 *
   +box-sizing(border-box)
@@ -20,9 +20,12 @@ html, body
   background: url(/img/bg.jpg) no-repeat
   background-size: cover
   background-position: 50% 0
-  +animation(bg-fade-in 1s)
+  +animation(fade-in $timing)
 
-.logos
+.mobile-logos
+  display: none
+
+.logos, .mobile-logos
   +clearfix
 
 .heart
@@ -54,7 +57,32 @@ html, body
 .black-divider
   +linear-gradient(rgba($black, 1), rgba($black, 0), $fallback: transparent)
 
-.rails-logo, .lineman-logo
+h1.mobile-title
+  +animation(fade-in 1s)
+  z-index: 9999
+  background: rgba($white, .5)
+  width: 100%
+  box-shadow: 0 1px 3px rgba($black, .25)
+  text-align: center
+  display: block
+  position: absolute
+  top: 78px
+  color: $black
+  font-weight: bold
+  font-size: 24px
+  padding: 50px 0 46px
+  display: none
+
+  span
+    color: $red
+
+.rails-logo-mobile
+  width: 29%
+  position: relative
+  top: 60px
+  +clearfix
+
+.rails-logo, .lineman-logo, .rails-logo-mobile
   width: 29%
   position: relative
   top: 60px
@@ -88,14 +116,12 @@ html, body
   float: left
   margin: 0 0 0 15%
   right: 5%
-  +animation(rails-slide $timing-with-delay)
-
+  +animation(rails-slide $timing)
 
   .page-logo
     +size(141px 180px)
     +retina-image(/img/rails-logo, 100%)
     margin: 0 auto 21px
-
 
   a.button
     width: 188px
@@ -106,13 +132,32 @@ html, body
       background: $red
       color: white
 
+.rails-logo-mobile
+  display: none
+
+.rails-logo-mobile
+  margin: auto
+  +animation(fade-in $timing)
+
+  .page-logo
+    +size(141px 180px)
+    +retina-image(/img/rails-logo, 100%)
+    margin: 0 auto 21px
+
+  a.button
+    width: 188px
+    color: $red
+    border-color: $red
+
+    &:hover
+      background: $red
+      color: white
 
 .lineman-logo
   float: right
   margin: 0 15% 0 0
   left: 5%
-  +animation(lineman-slide $timing-with-delay)
-
+  +animation(lineman-slide $timing)
 
   .page-logo
     +size(163px 181px)
@@ -200,7 +245,7 @@ html, body
   0%, 65%
     opacity: 0
 
-+keyframes(bg-fade-in)
++keyframes(fade-in)
   0%
     opacity: 0
 
@@ -218,3 +263,62 @@ html, body
     opacity: 0
     +transform(translateX(80px))
 
+@media screen and (max-width: 709px)
+  .rails-code, .lineman-code
+    float: none
+    width: 96%
+    margin: auto
+
+  .code-spacer
+    display: none
+
+  .mobile-logos
+    display: block
+
+  .rails-logo-mobile
+    width: 96%
+    display: block
+    margin: 0 auto 110px
+
+    a.button
+      width: 188px
+      border-color: $red
+      background: $red
+      color: white
+
+  .rails-logo
+    display: none
+
+  .lineman-logo
+    +animation(fade-in $timing)
+    float: none
+    width: 96%
+    position: relative
+    margin: 140px auto 0
+    left: 0
+    top: 60px
+    +clearfix
+
+    a.button
+      width: 168px
+      border-color: $black
+      background: $black
+      color: white
+
+  .heart
+    +position(absolute, 0px 0 0 0)
+    top: -42px
+
+  .dividers
+    display: none
+
+  h1.mobile-title
+    display: block
+
+  +keyframes(code-fade3)
+    0%, 30%
+      opacity: 0
+
+  +keyframes(code-fade4)
+    0%, 45%
+      opacity: 0
