@@ -225,6 +225,22 @@ h1.mobile-title
   left: 5%
   height: 132px
 
+footer
+  width: 100%
+  margin: 60px 0 0
+  padding: 0 0 30px
+
+.octocat
+  +retina-image(/img/octocat, 100%)
+  +size(52 50)
+  margin: auto
+  opacity: .9
+  +transition(opacity .3s)
+
+  &:hover
+    opacity: 1
+
+
 +keyframes(code-fade1)
   0%, 15%
     opacity: 0
@@ -268,6 +284,10 @@ h1.mobile-title
     float: none
     width: 96%
     margin: auto
+
+  footer
+    margin: 30px 0 0
+    padding: 0 0 60px
 
   .code-spacer
     display: none
