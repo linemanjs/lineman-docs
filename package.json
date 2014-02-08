@@ -12,7 +12,7 @@
     "url": "git://github.com/linemanjs/lineman-docs.git"
   },
   "dependencies": {
-    "lineman": ">= 0.14.5",
+    "lineman": ">= 0.24.3",
     "grunt-markdown-blog": ">= 0.2.2"
   }
 }
