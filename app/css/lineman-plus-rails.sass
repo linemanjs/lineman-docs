@@ -203,6 +203,13 @@ h1.mobile-title
       padding: 15px
 
 .code-block
+  margin-bottom: 40px
+  h3
+    margin-bottom: 10px
+  p
+    padding: 0px 15px 0px 15px
+    font-size: 1.1em
+    font-style: italic
 
   &:nth-child(1)
     +animation(code-fade1 2s)
@@ -219,11 +226,22 @@ h1.mobile-title
   &:nth-child(5)
     +animation(code-fade5 2.6s)
 
+  &:nth-child(6)
+    +animation(code-fade6 2.6s)
+
 .code-spacer
   float: right
   width: 100%
   left: 5%
-  height: 132px
+
+  &.big
+    height: 270px
+
+  &.medium
+
+  &.small
+    height: 116px
+
 
 footer
   width: 100%
@@ -258,6 +276,10 @@ footer
     opacity: 0
 
 +keyframes(code-fade5)
+  0%, 65%
+    opacity: 0
+
++keyframes(code-fade6)
   0%, 65%
     opacity: 0
 
