@@ -42,6 +42,11 @@ module.exports = require(process.env['LINEMAN_MAIN']).config.extend "application
         js: "../js/app.js"
         css: "../css/app.css"
 
+  pages:
+    dist:
+      context:
+        cdn: "http://cdn4.testdouble.com/"
+
   # Use grunt-markdown-blog in lieu of Lineman's built-in pages task
   prependTasks:
     common: "markdown:dev"
