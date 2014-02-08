@@ -90,8 +90,12 @@
         <pre><code>$ rake assets:precompile</code></pre>
       </div>
     </div>
-
     </section>
+    <footer>
+      <a href="https://github.com/linemanjs/lineman-plus-rails">
+        <div class="octocat"></div>
+      </a>
+    </footer>
 
     <script type="text/javascript" src="<%=cdn%>js/app.js"></script>
     <script type="text/javascript">
