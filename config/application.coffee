@@ -18,15 +18,10 @@ module.exports = require(process.env['LINEMAN_MAIN']).config.extend "application
       layouts:
         wrapper: "app/templates/wrapper.us"
         index: "app/templates/index.us"
-        post: "app/templates/post.us"
-        archive: "app/templates/archive.us"
         page: "app/templates/page.us"
       paths:
-        posts: "app/posts/*.md"
         pages: "app/pages/**/*.md"
         index: "index.html"
-        archive: "archive.html"
-        rss: "index.xml"
 
     dev:
       dest: "generated"
