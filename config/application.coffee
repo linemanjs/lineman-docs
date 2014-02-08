@@ -31,12 +31,14 @@ module.exports = require(process.env['LINEMAN_MAIN']).config.extend "application
     dev:
       dest: "generated"
       context:
+        cdn: ""
         js: "../js/app.js"
         css: "../css/app.css"
 
     dist:
       dest: "dist"
       context:
+        cdn: "http://cdn4.testdouble.com/"
         js: "../js/app.js"
         css: "../css/app.css"
 
@@ -46,6 +48,7 @@ module.exports = require(process.env['LINEMAN_MAIN']).config.extend "application
     dist: "markdown:dist"
 
   enableSass: true
+  enableAssetFingerprint: true
 
   watch:
     markdown:
