@@ -1,16 +1,15 @@
 <% site.categories = [
-    "understanding-lineman",
-    "working-with-lineman",
-    "advanced-features",
-    "customizing-lineman",
-    "questions-and-answers",
-    "about-lineman"
+    "Understanding Lineman",
+    "Working with Lineman",
+    "Advanced Features",
+    "Customizing Lineman",
+    "Questions & Answers",
+    "About Lineman"
   ]
-  .map(function(categorySlug){
-    return new site.lib.Category(site, categorySlug)
+  .map(function(categoryTitle){
+    return new site.lib.Category(site, categoryTitle)
   });
-%>
-<!DOCTYPE html>
+%><!DOCTYPE html>
 <html class="td">
   <head>
     <title><%= site.title %> | <%= site.description %></title>

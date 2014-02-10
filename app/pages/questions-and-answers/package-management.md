@@ -1,6 +1,6 @@
 ---
 title: "Package Management"
-category: "questions-and-answers"
+category: "questions-answers"
 slug: "package-management"
 ordinal: 5
 ---

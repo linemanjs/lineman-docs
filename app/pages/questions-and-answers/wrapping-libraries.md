@@ -1,6 +1,6 @@
 ---
 title: "Wrapping Libraries"
-category: "questions-and-answers"
+category: "questions-answers"
 slug: "wrapping-libs"
 ordinal: 3
 ---

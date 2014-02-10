@@ -1,8 +1,8 @@
 _str = require('underscore.string')
 
 module.exports = class Category
-  constructor: (@site, @slug) ->
-    @title = _str.titleize(@slug.replace(/-/g, ' '))
+  constructor: (@site, @title) ->
+    @slug = _str.slugify(@title)
     @pages = @site.pages
       .filter (page) =>
         page.attributes.category is @slug
