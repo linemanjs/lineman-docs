@@ -1,3 +1,15 @@
+<% site.categories = [
+    "understanding-lineman",
+    "working-with-lineman",
+    "advanced-features",
+    "customizing-lineman",
+    "questions-and-answers",
+    "about-lineman"
+  ]
+  .map(function(categorySlug){
+    return new site.lib.Category(site, categorySlug)
+  });
+%>
 <!DOCTYPE html>
 <html class="td">
   <head>

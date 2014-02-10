@@ -1,16 +1,4 @@
-<% [
-    "understanding-lineman",
-    "working-with-lineman",
-    "advanced-features",
-    "customizing-lineman",
-    "questions-and-answers",
-    "about-lineman"
-  ]
-  .map(function(categorySlug){
-    return new site.lib.Category(site, categorySlug)
-  })
-  .forEach(function(category){
-%>
+<% site.categories.forEach(function(category){ %>
 
   <h2 id="<%= category.slug %>"><%= category.title %></h2>
   <%= category.html() %>
