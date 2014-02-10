@@ -7,7 +7,7 @@
     "about-lineman"
   ]
   .map(function(categorySlug){
-    return new site.lib.Category(site.pages, categorySlug)
+    return new site.lib.Category(site, categorySlug)
   })
   .forEach(function(category){
 %>
