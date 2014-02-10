@@ -37,69 +37,14 @@
             <li>» <a href="http://github.com/linemanjs/lineman">GitHub Repository</a></li>
           </ul>
 
-          <a class="toc_title" href="#understanding-lineman">
-            Understanding Lineman
-          </a>
-
+          <% site.categories.forEach(function(category){ %>
+          <a class="toc_title" href="#<%= category.slug %>"><%= category.title %></a>
           <ul class="toc_section">
-            <li>- <a href="#introduction">Building Happiness</a></li>
-            <li>- <a href="#modern-client">What does "modern-client" mean?</a></li>
-            <li>- <a href="#first-class">What is a "first-class" web app?</a></li>
-            <li>- <a href="#task-lifecycle">How does Lineman work?</a></li>
+            <% category.topics.forEach(function(topic){ %>
+            <li>- <a href="#<%= topic.slug %>"><%= topic.title %></a></li>
+            <% }); %>
           </ul>
-
-          <a class="toc_title" href="#working-with-lineman">
-            Working with Lineman
-          </a>
-
-          <ul class="toc_section">
-            <li>- <a href="#getting-started">Getting Started</a></li>
-            <li>- <a href="#project-templates">Project Templates</a></li>
-            <li>- <a href="#directory-structure">Project Directory Structure</a></li>
-            <li>- <a href="#develop-test-build">Develop, Test, Build</a></li>
-          </ul>
-
-          <a class="toc_title" href="#advanced-features">
-            Advanced Features
-          </a>
-
-          <ul class="toc_section">
-            <li>- <a href="#api-integration">API Integration</a></li>
-            <li>- <a href="#push-state">HTML5 PushState Simulation</a></li>
-            <li>- <a href="#lineman-pages">Lineman Pages</a></li>
-            <li>- <a href="#heroku-deployment">Heroku Buildpack</a></li>
-          </ul>
-
-          <a class="toc_title" href="#customizing-lineman">
-            Customizing Lineman
-          </a>
-
-          <ul class="toc_section">
-            <li>- <a href="#adding-tasks">Adding Grunt Tasks</a></li>
-            <li>- <a href="#removing-tasks">Removing Grunt Tasks</a></li>
-          </ul>
-
-          <a class="toc_title" href="#questions-and-answers">
-            Questions &amp; Answers
-          </a>
-
-          <ul class="toc_section">
-            <li>- <a href="#lineman-vs-yeoman">Lineman vs Yeoman</a></li>
-            <li>- <a href="#sub-generators">Generators</a></li>
-            <li>- <a href="#wrapping-libs">Wrapping Libraries</a></li>
-            <li>- <a href="#test-runner">Test Runner</a></li>
-            <li>- <a href="#package-management">Package Management</a></li>
-          </ul>
-
-
-          <a class="toc_title" href="#about-lineman">
-            About Lineman
-          </a>
-
-          <ul class="toc_section">
-            <li>- <a href="#the-name">The Name</a></li>
-            <li>- <a href="#license">License</a></li>
-          </ul>
+          <% }); %>
         </p>
         <p class="services">
           <a href="http://twitter.com/testdouble"><span class="twitter skm">Twitter</span></a>
