@@ -22,6 +22,8 @@ module.exports = require(process.env['LINEMAN_MAIN']).config.extend "application
       paths:
         pages: "app/pages/**/*.md"
         index: "index.html"
+      lib:
+        Category: require('../lib/category')
 
     dev:
       dest: "generated"
