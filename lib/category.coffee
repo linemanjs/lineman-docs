@@ -9,8 +9,7 @@ module.exports = class Category
         page.attributes.category is @slug
       .sort (page1, page2) ->
         page1.attributes.ordinal - page2.attributes.ordinal
-    @topics = @pages.map (page) ->
-      new Topic(page.title(), page.attributes.slug)
+    @topics = @pages.map (page) -> new Topic(page)
 
   html: ->
     @pages.reduce (html, page) =>
