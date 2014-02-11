@@ -24,8 +24,8 @@
     </section>
     <div class="heart">
       <h1 class="mobile-title">Lineman + <span>Ruby on Rails</span></h1>
-      <svg class="heart-icon" width="118px" height="104px" viewBox="0 0 118 104" xmlns="http://www.w3.org/2000/svg"
-        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+      <svg class="heart-icon" width="118px" height="104px" viewBox="0 0 118 104" xmlns="http://www.w3.org/2000/svg">
+        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
             <path d="M58,19.0207082 C58,19.0207082 86.4168959,-12.2273884 108.897436,12.558379 C131.377976,37.3441454 86.6045834,81.358037 58,102" id="Path-123" stroke="#1A1919" stroke-width="4"></path>
             <path d="M3,19.0207082 C3,19.0207082 31.4168959,-12.2273884 53.8974359,12.558379 C76.3779763,37.3441454 31.6045834,81.358037 3,102" id="Path-123-copy" stroke="#64192A" stroke-width="4" transform="translate(31.500000, 52.500000) scale(-1, 1) translate(-31.500000, -52.500000) "></path>
         </g>
