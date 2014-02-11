@@ -121,32 +121,45 @@
       <div class="content">
         <div class="documentation-wrap">
           <div id="intro">
-            <p>
-              <a href="http://github.com/linemanjs/lineman/">Lineman</a> is a command-line utility that is hyper-focused on helping web developers build first-class JavaScript web applications. Lineman provides a thin wrapper around a number of client-side productivity tools (primarily <a href="http://www.expressjs.com">Express</a>, <a href="http://www.gruntjs.org">Grunt</a>, and <a href="http://github.com/airportyh/testem">Testem</a>), with the goal of helping developers focus on writing awesome web apps instead of worrying about workflow configuration.
-            </p>
+            <div id="description">
+              <p>
+                <a href="http://github.com/linemanjs/lineman/">Lineman</a> is a command-line utility that is hyper-focused on helping web developers build first-class JavaScript web applications. Lineman provides a thin wrapper around a number of client-side productivity tools (primarily <a href="http://www.expressjs.com">Express</a>, <a href="http://www.gruntjs.org">Grunt</a>, and <a href="http://github.com/airportyh/testem">Testem</a>), with the goal of helping developers focus on writing awesome web apps instead of worrying about workflow configuration.
+              </p>
 
-            <div class="featured well">
-              <p class="bright">npm install -g lineman</p>
+              <!--<div class="featured well">
+                <p class="bright">npm install -g lineman</p>
+              </div>
+              <div class="sub well">
+                <p class="bright">lineman new</p>
+                <p class="bright">lineman run</p>
+                <p class="bright">lineman spec</p>
+                <p class="bright">lineman build</p>
+              </div>-->
+
+              <p>
+                The project is
+                <a href="http://github.com/linemanjs/lineman/">hosted on GitHub</a>.
+                You can report bugs and discuss features on the
+                <a href="http://github.com/linemanjs/lineman/issues">issues page</a>
+                or send tweets to <a href="http://twitter.com/linemanjs">@linemanjs</a>.
+              </p>
+
+              <p>
+                <i>Lineman is open-source technology from <a href="http://testdouble.com/">Test Double, LLC</a>.</i>
+              </p>
             </div>
-            <div class="sub well">
-              <p class="bright">lineman new</p>
-              <p class="bright">lineman run</p>
-              <p class="bright">lineman spec</p>
-              <p class="bright">lineman build</p>
+            <div id="installation">
+              <pre>
+                <code class="lang-bash">
+                  <p>$ npm install -g lineman</p>
+                  <br>
+                  <p>> lineman new</p>
+                  <p>> lineman run</p>
+                  <p>> lineman spec</p>
+                  <p>> lineman build</p>
+                </code>
+              </pre>
             </div>
-
-            <p>
-              The project is
-              <a href="http://github.com/linemanjs/lineman/">hosted on GitHub</a>.
-              You can report bugs and discuss features on the
-              <a href="http://github.com/linemanjs/lineman/issues">issues page</a>
-              or send tweets to <a href="http://twitter.com/linemanjs">@linemanjs</a>.
-            </p>
-
-            <p>
-              <i>Lineman is open-source technology from <a href="http://testdouble.com/">Test Double, LLC</a>.</i>
-            </p>
-
           </div>
           <div id="documentation">
             <%= yield %>

@@ -91,12 +91,13 @@ html, body
         text-decoration: underline
 
 
+
 .documentation-wrap
-  max-width: 800px
+  max-width: 960px
   margin: 40px auto 0px auto
-  font-size: 18px
+  font-size: 19.8px
   font-weight: 300
-  line-height: 1.4
+  line-height: 36px
   padding: 0 70px 15px 30px
 
   h1,h2
@@ -113,6 +114,8 @@ html, body
 
   h4
     font-size: 22px
+  p
+    margin-top: 45px
 
   strong
     color: $darkBlack
@@ -123,7 +126,7 @@ html, body
 
   article
     header
-      margin-top: 30px
+      margin-top: 65px
 
   blockquote
     border-left: $mediumGrey 5px solid
@@ -131,7 +134,7 @@ html, body
     padding: 15px 0 15px 15px
     color: $darkGrey
   a
-    color: $blue
+    color: $green
 
   .byline, .share
     text-align: right
@@ -184,7 +187,8 @@ code
 
 p > code, li > code
   padding: 0px 2px 0px 2px
-  background-color: $lightGrey
+  color: $consoleGreen
+  background-color: $blackCode
   word-break: break-word
 
 pre
@@ -192,7 +196,7 @@ pre
   border-radius: 10px
   background-color: $green
   padding-top: 40px
-    
+  background: url("/img/icn-console-buttons.png") no-repeat 10px 15px $green
 
   code
     border-radius: 0px
@@ -202,6 +206,35 @@ pre
     word-break: none
     border-bottom-left-radius: 10px
     border-bottom-right-radius: 10px
+    margin-bottom: 55px
+
+#intro
+  position: relative
+
+  #description
+    width: 380px
+
+  #installation
+    width: 460px
+    position: absolute
+    right: 0
+    top: 0
+    
+    pre
+      height: 100px
+      line-height: 7px
+
+      code
+        height: 255px
+        font-size: 14px
+        color: $consoleGreen
+        padding-left: 15px
+        p
+          margin: 0
+
+#documentation
+  margin-top: 190px
+
 
 
 @media only screen and (max-width: 1100px)
