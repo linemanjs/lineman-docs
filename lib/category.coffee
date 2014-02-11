@@ -1,5 +1,4 @@
 _str = require('underscore.string')
-Topic = require('./topic')
 
 module.exports = class Category
   constructor: (@site, @title) ->
@@ -9,7 +8,6 @@ module.exports = class Category
         page.get('category') is @slug
       .sort (page1, page2) ->
         page1.get('ordinal') - page2.get('ordinal')
-    @topics = @pages.map (page) -> new Topic(page)
 
   html: ->
     @pages.reduce (html, page) =>
