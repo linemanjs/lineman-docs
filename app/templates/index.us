@@ -1,6 +1,6 @@
 <% site.categories.forEach(function(category){ %>
 
-  <h2 id="<%= category.slug %>"><%= category.title %></h2>
+  <h2 id="<%- category.slug %>"><%- category.title %></h2>
   <%= category.html() %>
 
 <% }); %>

@@ -1,6 +1,6 @@
-<article id="<%= post.get('slug') %>">
+<article id="<%- post.get('slug') %>">
   <header>
-    <h3><%= post.title() %></h3>
+    <h3><%- post.title() %></h3>
   </header>
   <section class="documentation">
     <%= post.content() %>
