@@ -6,9 +6,9 @@ module.exports = class Category
     @slug = _str.slugify(@title)
     @pages = @site.pages
       .filter (page) =>
-        page.attributes.category is @slug
+        page.get('category') is @slug
       .sort (page1, page2) ->
-        page1.attributes.ordinal - page2.attributes.ordinal
+        page1.get('ordinal') - page2.get('ordinal')
     @topics = @pages.map (page) -> new Topic(page)
 
   html: ->
