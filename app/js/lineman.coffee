@@ -15,5 +15,6 @@ $ ->
           initial: "animated",
           pinned: "slideInDown",
           unpinned: "slideOutUp"
-        }
+        },
+        onUnpin : () -> console.log(this)
     })

@@ -102,19 +102,23 @@
         </p>
       </nav>
     </div>
+
     <div class="container">
       <header id="header" class="fixed">
-          <a id="logo-link" href="http://www.testdouble.com"><span class="logo dark skm">Test Double</span></a>
+          <span id="blur-lineman-logo"></span>
+          <div class="cover">
+            <a id="logo-link" href="http://www.testdouble.com"><span class="logo dark skm">Test Double</span></a>
 
-          <span id="right-menu" class="menu skm">Menu</span>
+            <span id="right-menu" class="menu skm">Menu</span>
 
-          <span id="lineman-logo"></span>
+            <span id="lineman-logo"></span>
 
-          <h1>Lineman.js</h1>
-          <div class="post">
+            <h1>Lineman.js</h1>
+            <div class="post">
             <h2>
               Lineman takes <strong>everything you love</strong> about building server-side applications
               so that you can <strong>find joy in your client-side applications</strong></h2>
+            </div>
           </div>
       </header>
 
