@@ -33,22 +33,24 @@
         <p class="pages">
           <img id="lineman-logo" src="<%-cdn%>img/lineman-logo.png" alt="Lineman">
           <a class="toc_title" href="#">Lineman</a>
-          <ul class="toc_section">
-            <li>» <a href="http://github.com/linemanjs/lineman">GitHub Repository</a></li>
-          </ul>
-
-          <% site.categories.forEach(function(category){ %>
-          <a class="toc_title" href="#<%- category.slug %>"><%- category.title %></a>
-          <ul class="toc_section">
-            <% category.pages.forEach(function(page){ %>
-            <li>- <a href="#<%- page.get('slug') %>"><%- page.title() %></a></li>
-            <% }); %>
-          </ul>
-          <% }); %>
         </p>
+
+        <ul class="toc_section">
+          <li>» <a href="http://github.com/linemanjs/lineman">GitHub Repository</a></li>
+        </ul>
+
+        <% site.categories.forEach(function(category){ %>
+        <a class="toc_title" href="#<%- category.slug %>"><%- category.title %></a>
+        <ul class="toc_section">
+          <% category.pages.forEach(function(page){ %>
+          <li>- <a href="#<%- page.get('slug') %>"><%- page.title() %></a></li>
+          <% }); %>
+        </ul>
+        <% }); %>
+
         <p class="services">
           <a href="http://twitter.com/testdouble"><span class="twitter skm">Twitter</span></a>
-          <a href="http://github.com/testdouble"><span class="github skm">Github</a></a>
+          <a href="http://github.com/testdouble"><span class="github skm">Github</span></a>
         </p>
         <p class="contact-info">
           614.349.4279

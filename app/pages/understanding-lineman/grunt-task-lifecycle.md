@@ -1,7 +1,7 @@
 ---
 title: "How does Lineman work?"
 category: "understanding-lineman"
-slug: "task-lifecycle"
+slug: "how-does-it-work"
 ordinal: 4
 ---
 
