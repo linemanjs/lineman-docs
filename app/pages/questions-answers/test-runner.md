@@ -1,6 +1,6 @@
 ---
 title: "Test Runner"
-category: "questions-and-answers"
+category: "questions-answers"
 slug: "test-runner"
 ordinal: 4
 ---

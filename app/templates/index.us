@@ -1,40 +1,6 @@
-<%
-  htmlForCategory = function(category) {
-    var categoryHtml = _(site.pages).chain()
-      .filter(function(page) {
-        return page.attributes.category === category;
-      })
-      .sortBy(function(page) {
-        return page.attributes.ordinal;
-      })
-      .reduce(function(html, page) {
-        return html + site.pages.htmlFor(site, page);
-      }, "")
-      .value();
+<% site.categories.forEach(function(category){ %>
 
-    var categoryHeader = headerForCategory(category);
+  <h2 id="<%= category.slug %>"><%= category.title %></h2>
+  <%= category.html() %>
 
-    return [categoryHeader, categoryHtml].join("\n");
-  }
-
-  headerForCategory = function(category) {
-    var title = _.titleize(category.split("-").join(" "));
-
-    return "<h2 id='" + category + "'>" + title + "</h2>";
-  }
-
-  categories = [
-    "understanding-lineman",
-    "working-with-lineman",
-    "advanced-features",
-    "customizing-lineman",
-    "questions-and-answers",
-    "about-lineman"
-  ];
-%>
-
-<%=
-  _(categories).reduce(function(html, category) {
-    return html + htmlForCategory(category);
-  }, "")
-%>
+<% }); %>

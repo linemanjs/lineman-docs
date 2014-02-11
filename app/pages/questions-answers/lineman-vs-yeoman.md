@@ -1,6 +1,6 @@
 ---
 title: "Lineman vs Yeoman"
-category: "questions-and-answers"
+category: "questions-answers"
 slug: "lineman-vs-yeoman"
 ordinal: 1
 ---
