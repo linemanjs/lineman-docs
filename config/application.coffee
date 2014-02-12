@@ -9,6 +9,14 @@ module.exports = require(process.env['LINEMAN_MAIN']).config.extend "application
 
   loadNpmTasks: ["grunt-markdown-blog"]
 
+  enableSass: true
+  enableAssetFingerprint: true
+
+  # Use grunt-markdown-blog in lieu of Lineman's built-in pages task
+  prependTasks:
+    common: "markdown:dev"
+    dist: "markdown:dist"
+
   markdown:
     options:
       author: "Test Double"
@@ -44,17 +52,9 @@ module.exports = require(process.env['LINEMAN_MAIN']).config.extend "application
       context:
         cdn: "http://cdn4.testdouble.com/"
 
-  # Use grunt-markdown-blog in lieu of Lineman's built-in pages task
-  prependTasks:
-    common: "markdown:dev"
-    dist: "markdown:dist"
-
-  enableSass: true
   sass:
     options:
       bundleExec: true
-
-  enableAssetFingerprint: true
 
   watch:
     markdown:
