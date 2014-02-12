@@ -91,7 +91,7 @@
         </p>
         <p class="services">
           <a href="http://twitter.com/testdouble"><span class="twitter skm">Twitter</span></a>
-          <a href="http://github.com/testdouble"><span class="github skm">Github</a></a>
+          <a href="http://github.com/testdouble"><span class="github skm">Github</span></a>
         </p>
         <p class="contact-info">
           614.349.4279
@@ -118,6 +118,14 @@
             <h2>
               Lineman takes <strong>everything you love</strong> about building server-side applications
               so that you can <strong>find joy in your client-side applications</strong></h2>
+              <div class="social-icons">
+                <a href="https://twitter.com/linemanjs" class="">
+                  <span class="twitter skm">Lineman on Twitter</span>
+                </a>
+                <a href="https://github.com/linemanjs/lineman" class=""> 
+                  <span class="github skm">Lineman on GitHub</span>
+                </a>
+              </div>
             </div>
           </div>
       </header>

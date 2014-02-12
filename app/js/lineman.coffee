@@ -8,9 +8,14 @@ $ ->
     }, 500);
     sidebar.close()
 
+  offset = 250
+  if window.scrollY > offset 
+    $('#header').addClass('fixed')
+    offset = 30
+    
   $('#header').headroom({
         tolerance: 10,
-        offset : 250,
+        offset : offset,
         classes: {
           initial: "animated",
           pinned: "slideInDown",
