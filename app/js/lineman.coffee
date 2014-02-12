@@ -10,11 +10,14 @@ $ ->
 
   $('#header').headroom({
         tolerance: 10,
-        offset : 0,
+        offset : 250,
         classes: {
           initial: "animated",
           pinned: "slideInDown",
           unpinned: "slideOutUp"
         },
-        onUnpin : () -> console.log(this)
+        onUnpin : () -> if !$(this.elem).hasClass('fixed')
+                          $(this.elem).addClass('fixed')
+                          window.scrollTo(0,0)
+                          this.offset = 30
     })

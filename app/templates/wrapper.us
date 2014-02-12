@@ -104,7 +104,7 @@
     </div>
 
     <div class="container">
-      <header id="header" class="fixed">
+      <header id="header" class="">
           <span id="blur-lineman-logo"></span>
           <div class="cover">
             <a id="logo-link" href="http://www.testdouble.com"><span class="logo dark skm">Test Double</span></a>
