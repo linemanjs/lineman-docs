@@ -34,7 +34,7 @@ module.exports = function(lineman) {
 
 #### Setting up ruby
 
-Sass requires the "sass" ruby gem to be installed. (For info on installing ruby see [rvm](http://rvm.io) or [rbenv](https://github.com/sstephenson/rbenv) + [rbenv-build](https://github.com/sstephenson/ruby-build)). To install the "sass" gem, run:
+Sass requires the "sass" ruby gem to be installed. (For info on installing ruby see [rvm](http://rvm.io) or [rbenv](https://github.com/sstephenson/rbenv)+[ruby-build](https://github.com/sstephenson/ruby-build)). To install the "sass" gem, run:
 ``` bash
 $ gem install sass
 ```
