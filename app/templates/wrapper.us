@@ -14,13 +14,13 @@
 <html class="td">
   <head>
     <title><%- site.title %> | <%- site.description %></title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="user-scalable=no,initial-scale = 1.0,maximum-scale = 1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="user-scalable=no,initial-scale = 1.0,maximum-scale = 1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
     <link rel="stylesheet" type="text/css" href="<%-cdn%>css/app.css" media="all" />
-    <link rel="icon" href="<%-cdn%>img/favicon.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="<%-cdn%>img/apple-touch-icon.png">
+    <link rel="icon" href="<%-cdn%>img/favicon.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="<%-cdn%>img/apple-touch-icon.png" />
   </head>
   <body class="td">
     <a id="logo-link" href="http://www.testdouble.com"><span class="logo dark skm">Test Double</span></a>
@@ -31,7 +31,7 @@
         <span class="close skm">Close</span>
 
         <p class="pages">
-          <img id="lineman-logo" src="<%-cdn%>img/lineman-logo.png" alt="Lineman">
+          <img id="lineman-logo" src="<%-cdn%>img/lineman-logo.png" alt="Lineman" />
           <a class="toc_title" href="#">Lineman</a>
         </p>
 

@@ -14,7 +14,7 @@ We are commonly asked, "How does Lineman differ from Yeoman?". Firstly, Lineman 
 | HTML5 pushState Simulator | builtin and enabled via `config/application` | - |
 | API Stubbing Prototyping | builtin and enabled via `config/server` | - |
 | API Proxy | builtin and enabled via `config/application` | - |
-| Test Runner | testem, configured for dev and ci mode with `lineman spec`<br> and `lineman spec-ci` | - |
+| Test Runner | testem, configured for dev and ci mode with `lineman spec`<br /> and `lineman spec-ci` | - |
 | Grunt Task Lifecycle | preconfigured phases: `common, dev, dist`, split into `config/files` and `config/application` | generator specific |
 | Dependency Graph | intentionally shallow and lightweight | generator specific, often deep and heavy |
 | Cute ASCII Text Greeter | - | snazzy wizard based CLI |
