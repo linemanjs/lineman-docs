@@ -50,6 +50,10 @@ module.exports = require(process.env['LINEMAN_MAIN']).config.extend "application
     dist: "markdown:dist"
 
   enableSass: true
+  sass:
+    options:
+      bundleExec: true
+
   enableAssetFingerprint: true
 
   watch:
