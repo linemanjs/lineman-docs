@@ -16,7 +16,7 @@
   },
   "devDependencies": {
     "lineman": ">= 0.24.3",
-    "grunt-markdown-blog": "~0.3.2",
+    "lineman-blog": "~0.0.1",
     "underscore.string": "~2.3.3"
   },
   "license": "MIT"
