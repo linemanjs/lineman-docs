@@ -3,7 +3,8 @@ $ ->
 
   $('nav').find('a[href^=#]').on 'click', (e) ->
     e.preventDefault()
+    slug = $(e.target).attr('href')
     $('html, body').animate({
-        scrollTop: $($(e.target).attr('href')).offset().top
+        scrollTop: $(slug).offset().top
     }, 500);
     sidebar.close()
