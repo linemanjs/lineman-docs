@@ -1,3 +1,4 @@
+cdn = "http://cdn4.testdouble.com/"
 module.exports = require(process.env['LINEMAN_MAIN']).config.extend "application",
 
   enableSass: true
@@ -8,7 +9,7 @@ module.exports = require(process.env['LINEMAN_MAIN']).config.extend "application
       author: "Test Double"
       title: "Lineman"
       description: "Build awesome web apps, easily."
-      url: "http://www.linemanjs.com"
+      url: "<%= pkg.homepage %>"
       paths:
         archive: null
         rss: null
@@ -21,12 +22,12 @@ module.exports = require(process.env['LINEMAN_MAIN']).config.extend "application
 
     dist:
       context:
-        cdn: "http://cdn4.testdouble.com/"
+        cdn: cdn
 
   pages:
     dist:
       context:
-        cdn: "http://cdn4.testdouble.com/"
+        cdn: cdn
 
   sass:
     options:
