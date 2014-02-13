@@ -2,7 +2,7 @@
 title: "Adding Grunt Tasks"
 category: "customizing-lineman"
 slug: "adding-tasks"
-ordinal: 2
+ordinal: 4
 ---
 
 #### Adding NPM based tasks

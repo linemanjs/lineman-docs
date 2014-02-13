@@ -89,7 +89,10 @@ module.exports = function(lineman) {
 };
 ```
 
-A word of warning: mutating the values directly on the `lineman.config.application` is not supported and will probably break in a subsequent release.
+(A word of warning: mutating values directly on the `lineman.config.application` is not supported and will probably break in a subsequent release.)
+
+One last fun trick with `config/application` is that, you can refactor your application config—should it ever become so large as to be unwieldy—into as many "plugin" files as you like in your app under `config/plugins/*.{js,coffee}`. Despite the name, there's no need to pull that config out into a separate module, it's just a convenience for breaking up large configurations down into more focused ones. For details on the API for plugin files, check out [Creating Lineman Plugins](#creating-lineman-plugins)
+
 
 #### files.js
 
