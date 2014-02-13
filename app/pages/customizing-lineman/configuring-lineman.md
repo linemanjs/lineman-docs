@@ -157,4 +157,4 @@ You can use `config/server` to specify custom routes that Lineman's development 
 
 #### spec.json
 
-This file is the Testem (the underlying test runner invoked by `lineman spec` and `lineman spec-ci`) configuration file. Check out details for customizing it at [Testem's readme](https://github.com/airportyh/testem#configuration-file).
+This file is the Testem (the underlying test runner invoked by `lineman spec` and `lineman spec-ci`) configuration file. Check out details for customizing it at [Testem's readme](https://github.com/airportyh/testem#configuration-file). Some Lineman-specific examples are [available here](#testem-configuration).

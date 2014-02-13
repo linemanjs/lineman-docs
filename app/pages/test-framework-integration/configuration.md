@@ -1,7 +1,7 @@
 ---
 title: "Configuration"
 category: "test-framework-integration"
-slug: "configuration"
+slug: "testem-configuration"
 ordinal: 1
 ---
 
