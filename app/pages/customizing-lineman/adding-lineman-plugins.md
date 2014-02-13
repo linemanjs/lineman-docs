@@ -7,7 +7,7 @@ ordinal: 2
 
 Lineman includes a plugin mechanism for packaging and sharing project configurations that are likely to be common across multiple Lineman projects.
 
-Our goal with Lineman has always been to encourage sensible commonality and decrease duplication between web projects by encapsulating sensible defaults for grunt task configurations. But what about for task configurations that aren't common to everyone? For example, it obviously wouldn't make sense for application-framework-specific build settings to make their way into the default Lineman configuration.
+Our goal with Lineman has always been to encourage commonality and to discourage duplication between web projects by encapsulating sensible defaults for grunt task configurations. But what about for task configurations that aren't common to everyone? For example, it obviously wouldn't make sense for application-framework-specific build settings to make their way into the default Lineman configuration.
 
 For cases like these, we created a way to package customizations to Grunt task configurations and Lineman's build behavior without requiring any duplication or additional end-user configuration.
 
