@@ -2,7 +2,7 @@
 title: "Adding Grunt Tasks"
 category: "customizing-lineman"
 slug: "adding-tasks"
-ordinal: 1
+ordinal: 2
 ---
 
 #### Adding NPM based tasks
@@ -10,7 +10,7 @@ ordinal: 1
 To load NPM-based tasks that aren't part of the standard Lineman dependencies, you can add the module names to the `loadNpmTasks` object in `config/application.js`. Note that these still need to be added to your app's `package.json` dependencies and installed to `node_modules` with `npm install`.
 
 ```javascript
-  loadNpmTasks: ["npm_task_to_load"]
+  loadNpmTasks: lineman.config.application.loadNpmTasks.concat("npm_task_to_load")
 ```
 
 #### Adding Custom tasks
