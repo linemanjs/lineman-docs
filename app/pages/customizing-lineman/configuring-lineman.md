@@ -7,7 +7,7 @@ ordinal: 1
 
 Every lineman project comes with a handful of minimal configuration files out of the box. These are:
 
-```
+``` bash
 config/
 ├── application.js
 ├── files.js
@@ -24,19 +24,19 @@ Before we begin, let's look at a handy tool in our toolbox, the **lineman config
 
 At any time, you can ask Lineman what its configuration will look like as it will be passed to grunt (that is, after any plugin overrides or user overrides you've defined). To see the entire (very large) configuration object, just run:
 
-```
+``` bash
 $ lineman config
 ```
 
 Which is a handy way to scan and search for the option(s) you're interested in overriding. If you want to narrow your search, just provide `lineman config` the property path you're interested in. If you provide:
 
-```
+``` bash
 $ lineman config jshint.options
 ```
 
 You'll receive:
 
-```
+``` javascript
 {
   "curly": true,
   "eqeqeq": true,
@@ -60,7 +60,7 @@ The `config/application` file is your application's opportunity to override any 
 
 Let's start with an example. Suppose you want to override Lineman's built-in [jshint](http://www.jshint.com/) configuration to allow constructor functions to start with lower-case letters. Currently, Lineman sets the property associated with this rule ("newcap") to `true`. You could relax this rule in `config/application` like this:
 
-```
+``` javascript
 module.exports = function(lineman) {
   return {
     jshint: {
@@ -78,7 +78,7 @@ Sometimes, you'll want to peek at the existing lineman application config. You c
 
 In example, if we were to append a task to the "common" build phase (meaning we want it to run both during `lineman run` and `lineman build`), we'd want to concatenate our addition to the existing array to ensure we don't incidentally overwrite a previous configuration file or plugin's changes. *[Editor's note: we agree that this is currently a bit onerous and error-prone; we're working on an API that improves on this particular case]*:
 
-```
+``` javascript
 module.exports = function(lineman) {
   var app = lineman.config.application;
   return {
@@ -97,7 +97,7 @@ To make it easier to reuse file patterns across multiple task configurations, Li
 
 The most common override folks need to make is to override the load order of the third-party vendor JavaScript files their app depends on. To discover the default file globs for JavaScript, one could run `lineman config files.js` and see:
 
-```
+``` javascript
 {
   "app": "app/js/**/*.js",
   "vendor": "vendor/js/**/*.js",
@@ -112,7 +112,7 @@ The most common override folks need to make is to override the load order of the
 
 Knowing this, we can easily override the "files.js.vendor" property by supplying an array of patterns, like so:
 
-```
+``` javascript
 module.exports = function(lineman) {
   return {
     js: {
@@ -134,7 +134,7 @@ To understand the supported patterns (including how to exclude patterns), check 
 
 If you intend to extend Lineman with custom tasks or plugins, we encourage you to add additional file property paths to the files configuration (as opposed to hard-coding them in your relevant task configurations). You can use Grunt's configuration interpolation to expand them later. For instance, the `files.js.vendor` path above is referenced from an actual task configuration like so:
 
-```
+``` bash
 $ lineman config concat_sourcemap.js
 {
   "src": [
