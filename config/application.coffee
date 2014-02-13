@@ -1,21 +1,7 @@
-# Exports an object that defines
-#  all of the configuration needed by the projects'
-#  depended-on grunt tasks.
-#
-# You can find the parent object in: node_modules/lineman/config/application.coffee
-#
-
 module.exports = require(process.env['LINEMAN_MAIN']).config.extend "application",
-
-  loadNpmTasks: ["grunt-markdown-blog"]
 
   enableSass: true
   enableAssetFingerprint: true
-
-  # Use grunt-markdown-blog in lieu of Lineman's built-in pages task
-  prependTasks:
-    common: "markdown:dev"
-    dist: "markdown:dist"
 
   markdown:
     options:
@@ -23,31 +9,19 @@ module.exports = require(process.env['LINEMAN_MAIN']).config.extend "application
       title: "Lineman"
       description: "Build awesome web apps, easily."
       url: "http://www.linemanjs.com"
-      layouts:
-        wrapper: "app/templates/wrapper.us"
-        index: "app/templates/index.us"
-        page: "app/templates/page.us"
       paths:
-        pages: "app/pages/**/*.md"
-        index: "index.html"
         archive: null
         rss: null
       lib:
         Category: require('../lib/category')
 
     dev:
-      dest: "generated"
       context:
         cdn: ""
-        js: "../js/app.js"
-        css: "../css/app.css"
 
     dist:
-      dest: "dist"
       context:
         cdn: "http://cdn4.testdouble.com/"
-        js: "../js/app.js"
-        css: "../css/app.css"
 
   pages:
     dist:
@@ -57,8 +31,3 @@ module.exports = require(process.env['LINEMAN_MAIN']).config.extend "application
   sass:
     options:
       bundleExec: true
-
-  watch:
-    markdown:
-      files: ["app/posts/*.md", "app/templates/*.us", "app/pages/**/*.md" ]
-      tasks: ["markdown:dev"]
