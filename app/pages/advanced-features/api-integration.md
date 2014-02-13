@@ -9,7 +9,9 @@ Most web apps require some interaction with a server, and no developer could be 
 
 #### API Stubbing
 
-Users may define custom HTTP services to aid development in `config/server.js` by exporting a function named `drawRoutes`. Here's a trivial example:
+Users may define custom HTTP services to aid development in `config/server.js` by exporting a function named `drawRoutes`. The provided `app` is an [Express.js](http://expressjs.com/) application, so you have the entirety of its API available to you.
+
+Here's a trivial example:
 
 ```javascript
 module.exports = {
@@ -20,6 +22,12 @@ module.exports = {
   }
 };
 ```
+
+API stubbing is a powerful feature that can be leveraged to use Lineman as a rapid prototyping tool and to enable front-end development to run a bit ahead of backend development (and importantly, to gather feedback and validation before investing in full-stack development). In the past, [test double](http://testdouble.com) has used API stubbing to prove out a lightweight executable specification of the services a front-end application will need in order to work. In fact, it's often useful to keep a few data structures in memory to test more complex interactions (pushing objects onto an array, deleting them by ID, etc.).
+
+Note that this feature is intentionally only available to the development server. It is not intended to build out an actual production server, nor is it intended to be used in Lineman's built in unit test suite run with `lineman spec`.
+
+Lineman's also watching changes you make to the server stubbing, so there's typically no need to restart your development server upon changes.
 
 #### API Proxying
 
