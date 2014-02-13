@@ -7,4 +7,5 @@ $ ->
     $('html, body').animate({
         scrollTop: $(slug).offset().top
     }, 500);
+    window.location.hash = slug
     sidebar.close()
