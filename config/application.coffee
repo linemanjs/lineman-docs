@@ -1,7 +1,9 @@
 cdn = "http://cdn4.testdouble.com/"
-module.exports = require(process.env['LINEMAN_MAIN']).config.extend "application",
+lineman = require(process.env['LINEMAN_MAIN'])
 
-  loadNpmTasks: [ "grunt-html-validation", "grunt-htmlhint" ]
+module.exports = lineman.config.extend "application",
+
+  loadNpmTasks: lineman.config.application.loadNpmTasks.concat [ "grunt-html-validation", "grunt-htmlhint" ]
 
   enableSass: true
   enableAssetFingerprint: true
