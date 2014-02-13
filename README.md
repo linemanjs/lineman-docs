@@ -11,3 +11,7 @@ For each category, there is a directory under `app/pages/`. The directory names 
 The pages are ordered within each category according to the `ordinal` attribute in the page's metadata block. The page heading is taken from the `title` attribute of the metadata block, or if omitted, derived from the filename.
 
 The navigation is auto-generated based on the category titles and slugs, as well as the page titles and slugs; both of which support deep-linking.
+
+## HTML linting and validation
+
+There are two tasks included for validating the generated HTML: `grunt-html-validation` and `grunt-htmlhint`. Both tasks are configured to check html pages under `generated/`. Neither task is added to the lineman build processes, so they need to be run manually: `lineman grunt validation` and `lineman grunt htmlhint`.
