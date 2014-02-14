@@ -1,8 +1,10 @@
-<article id="<%= post.get('slug') %>" class="component">
+<article id="<%- post.get('slug') %>">
   <header>
-    <h3><%= post.title() %></h3>
+    <a href="#<%- post.get('slug') %>">
+      <h3><%- post.title() %></h3>
+    </a>
   </header>
-  <section class="content">
+  <section class="documentation">
     <%= post.content() %>
   </section>
 </article>

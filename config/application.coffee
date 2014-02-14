@@ -1,56 +1,56 @@
-# Exports an object that defines
-#  all of the configuration needed by the projects'
-#  depended-on grunt tasks.
-#
-# You can find the parent object in: node_modules/lineman/config/application.coffee
-#
+cdn = "http://cdn4.testdouble.com/"
+lineman = require(process.env['LINEMAN_MAIN'])
 
-module.exports = require(process.env['LINEMAN_MAIN']).config.extend "application",
+module.exports = lineman.config.extend "application",
 
-  loadNpmTasks: ["grunt-markdown-blog"]
+  loadNpmTasks: lineman.config.application.loadNpmTasks.concat [ "grunt-html-validation", "grunt-htmlhint" ]
+
+  enableSass: true
+  enableAssetFingerprint: true
 
   markdown:
     options:
       author: "Test Double"
       title: "Lineman"
       description: "Build awesome web apps, easily."
-      url: "http://www.linemanjs.com"
-      layouts:
-        wrapper: "app/templates/wrapper.us"
-        index: "app/templates/index.us"
-        post: "app/templates/post.us"
-        archive: "app/templates/archive.us"
-        page: "app/templates/page.us"
+      url: "<%= pkg.homepage %>"
       paths:
-        posts: "app/posts/*.md"
-        pages: "app/pages/**/*.md"
-        index: "index.html"
-        archive: "archive.html"
-        rss: "index.xml"
+        archive: null
+        rss: null
+      lib:
+        Category: require('../lib/category')
 
     dev:
-      dest: "generated"
       context:
-        js: "../js/app.js"
-        css: "../css/app.css"
+        cdn: ""
 
     dist:
-      dest: "dist"
       context:
-        js: "../js/app.js"
-        css: "../css/app.css"
+        cdn: cdn
 
-  # Use grunt-markdown-blog in lieu of Lineman's built-in pages task
-  prependTasks:
-    common: "markdown:dev"
-    dist: "markdown:dist"
-  removeTasks:
-    common: "pages:dev"
-    dist: "pages:dist"
+  pages:
+    dist:
+      context:
+        cdn: cdn
 
-  enableSass: true
+  sass:
+    options:
+      bundleExec: true
 
-  watch:
-    markdown:
-      files: ["app/posts/*.md", "app/templates/*.us", "app/pages/**/*.md" ]
-      tasks: ["markdown:dev"]
+  htmlhint:
+    files:
+      src: "generated/*.html"
+    options:
+      'tagname-lowercase': true, 'attr-lowercase': true, 'attr-value-double-quotes': true,
+      'attr-value-not-empty': true, 'doctype-first': true, 'tag-pair': true, 'tag-self-close': true,
+      'spec-char-escape': true, 'id-unique': true, 'src-not-empty': true, 'head-script-disabled': true,
+      'img-alt-require': true, 'doctype-html5': true, 'id-class-value': true, 'style-disabled': true
+
+  validation:
+    files:
+      src: "generated/*.html"
+    options:
+      relaxerror: [
+        "Bad value X-UA-Compatible for attribute http-equiv on element meta."
+        "Bad value source for attribute rel on element a: The string source is not a registered keyword or absolute URL."
+      ]

@@ -1,18 +1,25 @@
 {
   "name": "lineman-docs",
-  "title": "An HTML/JS/CSS app",
+  "description": "Documentation website for Lineman",
   "version": "0.0.1",
   "private": true,
-  "author": {
-    "name": "John Doe",
-    "company": "ACME, Inc."
-  },
+  "homepage": "http://linemanjs.com",
   "repository": {
     "type": "git",
     "url": "git://github.com/linemanjs/lineman-docs.git"
   },
-  "dependencies": {
-    "lineman": ">= 0.14.5",
-    "grunt-markdown-blog": ">= 0.2.2"
-  }
+  "bugs": {
+    "url": "https://github.com/linemanjs/lineman-docs/issues"
+  },
+  "scripts": {
+    "start": "lineman run"
+  },
+  "devDependencies": {
+    "lineman": ">= 0.24.3",
+    "lineman-blog": "~0.0.1",
+    "grunt-html-validation": "~0.1.13",
+    "grunt-htmlhint": "~0.4.0",
+    "underscore.string": "~2.3.3"
+  },
+  "license": "MIT"
 }

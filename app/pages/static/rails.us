@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Using Lineman with Rails</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="user-scalable=no,initial-scale = 1.0,maximum-scale = 1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    <link rel="stylesheet" type="text/css" href="<%=cdn%>css/app.css" media="all" />
+    <link rel="icon" href="<%=cdn%>img/favicon.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="<%=cdn%>img/apple-touch-icon.png" />
+  </head>
+  <body>
+    <div class="background-container"></div>
+    <section class="logos">
+      <div class="rails-logo">
+        <h1 class="page-logo">ruby on rails</h1>
+        <a href="http://api.rubyonrails.org/" class="button">ruby on rails</a>
+      </div>
+      <div class="lineman-logo">
+        <h1 class="page-logo">lineman</h1>
+        <a href="http://linemanjs.com/" class="button">Lineman.js</a>
+      </div>
+    </section>
+    <div class="heart">
+      <h1 class="mobile-title">Lineman + <span>Ruby on Rails</span></h1>
+      <svg class="heart-icon" width="118px" height="104px" viewbox="0 0 118 104" xmlns="http://www.w3.org/2000/svg">
+        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+            <path d="M58,19.0207082 C58,19.0207082 86.4168959,-12.2273884 108.897436,12.558379 C131.377976,37.3441454 86.6045834,81.358037 58,102" id="Path-123" stroke="#1A1919" stroke-width="4"></path>
+            <path d="M3,19.0207082 C3,19.0207082 31.4168959,-12.2273884 53.8974359,12.558379 C76.3779763,37.3441454 31.6045834,81.358037 3,102" id="Path-123-copy" stroke="#64192A" stroke-width="4" transform="translate(31.500000, 52.500000) scale(-1, 1) translate(-31.500000, -52.500000) "></path>
+        </g>
+      </svg>
+      <div class="dividers">
+        <div class="red-divider"></div>
+        <div class="black-divider"></div>
+      </div>
+      <div class="rails-info">
+      </div>
+    </div>
+
+    <section class="code">
+    <div class="lineman-code">
+      <div class="code-block">
+        <h3>Install Lineman's Rails plugin:</h3>
+        <pre><code>$ npm install --save-dev lineman-rails</code></pre>
+        <p>
+          This will set up some additional static routes and enable the API proxy.
+        </p>
+      </div>
+      <div class="code-spacer big"></div>
+      <div class="code-block">
+        <h3>Start your lineman server:</h3>
+        <pre><code>$ lineman run</code></pre>
+      </div>
+      <div class="code-block">
+        <h3>During development, use Lineman's server:</h3>
+        <pre><code>$ open http://localhost:8000</code></pre>
+      </div>
+    </div>
+    <section class="mobile-logos">
+      <div class="rails-logo-mobile">
+        <h1 class="page-logo">ruby on rails</h1>
+        <a href="http://api.rubyonrails.org/" class="button">ruby on rails</a>
+      </div>
+    </section>
+    <div class="rails-code">
+      <div class="code-block">
+        <h3>Add this to your Rails app's Gemfile:</h3>
+        <pre><code>gem 'rails-lineman'</code></pre>
+      </div>
+      <div class="code-block">
+        <h3>Tell the gem where to look for Lineman:</h3>
+        <pre><code>config.rails_lineman.lineman_project_location = "my/app"</code></pre>
+        <p>
+          You may also set an environment variable named <strong>LINEMAN_PROJECT_LOCATION</strong>.
+        </p>
+      </div>
+      <div class="code-block">
+        <h3>Include Lineman's CSS &amp; JavaScript:</h3>
+        <pre><code>&lt;%= stylesheet_link_tag "lineman/app" %&gt;
+&lt;%= javascript_include_tag "lineman/app" %&gt;</code></pre>
+      </div>
+      <div class="code-block">
+        <h3>Boot your Rails server:</h3>
+        <pre><code>$ bundle exec rails s</code></pre>
+      </div>
+      <div class="code-spacer small"></div>
+      <div class="code-block">
+        <h3>When you deploy, Lineman assets will be built &amp; included:</h3>
+        <pre><code>$ rake assets:precompile</code></pre>
+      </div>
+    </div>
+    </section>
+    <footer>
+      <a href="https://github.com/linemanjs/lineman-plus-rails">
+        <div class="octocat"></div>
+      </a>
+    </footer>
+
+    <script type="text/javascript" src="<%=cdn%>js/app.js"></script>
+    <script type="text/javascript">
+      $(function(){
+        function drawPath(className, duration, delay){
+          $(className).each(function(){
+            var path = this
+            var length = path.getTotalLength();
+            // Set up the starting positions
+            path.style.strokeDasharray = length + ' ' + length;
+            path.style.strokeDashoffset = length;
+            // Trigger a layout so styles are calculated & the browser
+            // picks up the starting position before animating
+            path.getBoundingClientRect();
+            // Define our transition
+            path.style.transition = path.style.WebkitTransition =
+              'stroke-dashoffset ' + duration + delay + ' linear';
+            // Go!
+            path.style.strokeDashoffset = '0';
+          });
+        }
+
+        $(function(){
+          drawPath('svg path', '.35s', '.0s');
+        });
+      });
+
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-32958269-1']);
+      _gaq.push(['_setDomainName', 'linemanjs.com']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+  </body>
+</html>
+
+

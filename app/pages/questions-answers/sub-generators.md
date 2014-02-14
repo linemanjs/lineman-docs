@@ -1,6 +1,6 @@
 ---
 title: "Sub Generators"
-category: "questions-and-answers"
+category: "questions-answers"
 slug: "sub-generators"
 ordinal: 2
 ---
