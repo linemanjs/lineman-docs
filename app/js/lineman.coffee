@@ -12,9 +12,9 @@ $ ->
   if window.scrollY > offset 
     $('#header').addClass('fixed')
     offset = 30
-    
+
   $('#header').headroom({
-        tolerance: 10,
+        tolerance: 2,
         offset : offset,
         classes: {
           initial: "animated",

@@ -1,21 +1,45 @@
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
+
 .template-projects {
   margin: 10px 0px 60px 20px;
 
   a {
     display: block;
-    margin-top: 20px;
+
+    margin-left: 35px;
     text-decoration: none;
+    float: left;
+    width: 145px;
 
     &:hover {
       text-decoration: underline;
     }
   }
+  h4{
+    font-size: 17px;
+  }
   .templates {
-    margin-right: 1em;
+
     position: relative;
-    float: left;
-    height: 50px;
-    width: 50px;
+
+    height: 145px;
+    width: 145px;
     background-size: 100%;
 
     &.backbone {
@@ -36,6 +60,19 @@
 
     &.blog {
       background-image: url("/img/blog-logo.png");
+    }
+  }
+}
+
+@media only screen and (max-width: 500px){
+  .template-projects{
+    a{
+      width: 100px;
+      height: 190px;
+    }
+    .templates{
+      width: 100px;
+      height: 100px;
     }
   }
 }
