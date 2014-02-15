@@ -11,7 +11,7 @@
     return new site.lib.Category(site, categoryTitle)
   });
 %><!DOCTYPE html>
-<html class="td">
+<html>
   <head>
     <title><%- site.title %> | <%- site.description %></title>
     <meta charset="utf-8" />
@@ -22,10 +22,8 @@
     <link rel="icon" href="<%-cdn%>img/favicon.png" />
     <link rel="apple-touch-icon" sizes="152x152" href="<%-cdn%>img/apple-touch-icon.png" />
   </head>
-  <body class="td">
-    <a id="logo-link" href="http://www.testdouble.com"><span class="logo dark skm">Test Double</span></a>
-    <span id="right-menu" class="menu dark skm">Menu</span>
 
+  <body>
     <div id="sidebar">
       <nav id="sidr-right" class="sidr right">
         <span class="close skm">Close</span>
@@ -62,51 +60,80 @@
       </nav>
     </div>
 
-    <div class="content">
-      <h1>Lineman.js</h1>
-      <div class="post">
-        <h2>
-          Lineman takes <strong>everything you love</strong> about building server-side applications
-          so that you can <strong>find joy in your client-side applications</strong></h2>
-      </div>
+    <div class="container">
+      <header id="header" class="">
+          <span id="blur-lineman-logo"></span>
+          <div class="cover">
+            <a id="logo-link" href="http://www.testdouble.com"><span class="logo dark skm">Test Double</span></a>
 
+            <span id="right-menu" class="menu skm">Menu</span>
 
-      <div class="documentation-wrap">
-        <div id="intro">
-          <p>
-            <a href="http://github.com/linemanjs/lineman/">Lineman</a> is a command-line utility that is hyper-focused on helping web developers build first-class JavaScript web applications. Lineman provides a thin wrapper around a number of client-side productivity tools (primarily <a href="http://www.expressjs.com">Express</a>, <a href="http://www.gruntjs.org">Grunt</a>, and <a href="http://github.com/airportyh/testem">Testem</a>), with the goal of helping developers focus on writing awesome web apps instead of worrying about workflow configuration.
-          </p>
+            <span id="lineman-logo"></span>
 
-          <div class="featured well">
-            <p class="bright">npm install -g lineman</p>
+            <h1>Lineman.js</h1>
+            <div class="post">
+            <h2>
+              Lineman takes <strong>everything you love</strong> about building server-side applications
+              so that you can <strong>find joy in your client-side applications</strong></h2>
+              <div class="social-icons">
+                <a href="https://twitter.com/linemanjs" class="">
+                  <span class="twitter skm">Lineman on Twitter</span>
+                </a>
+                <a href="https://github.com/linemanjs/lineman" class=""> 
+                  <span class="github skm">Lineman on GitHub</span>
+                </a>
+              </div>
+            </div>
           </div>
-          <div class="sub well">
-            <p class="bright">lineman new</p>
-            <p class="bright">lineman run</p>
-            <p class="bright">lineman spec</p>
-            <p class="bright">lineman build</p>
+      </header>
+
+      <div class="content">
+        <div class="documentation-wrap">
+          <div id="intro">
+            <h2 id="lineman-for-human-beings">Lineman is for human beings.</h2>
+            <div id="description">
+              <p>
+                <a href="http://github.com/linemanjs/lineman/">Lineman</a> is a command-line utility that is hyper-focused on helping web developers build first-class JavaScript web applications. Lineman provides a thin wrapper around a number of client-side productivity tools (primarily <a href="http://www.expressjs.com">Express</a>, <a href="http://www.gruntjs.org">Grunt</a>, and <a href="http://github.com/airportyh/testem">Testem</a>), with the goal of helping developers focus on writing awesome web apps instead of worrying about workflow configuration.
+              </p>
+
+              <p>
+                The project is
+                <a href="http://github.com/linemanjs/lineman/">hosted on GitHub</a>.
+                You can report bugs and discuss features on the
+                <a href="http://github.com/linemanjs/lineman/issues">issues page</a>
+                or send tweets to <a href="http://twitter.com/linemanjs">@linemanjs</a>.
+              </p>
+
+              <p>
+                <i>Lineman is open-source technology from <a href="http://testdouble.com/">Test Double, LLC</a>.</i>
+              </p>
+            </div>
+            <div id="installation">
+              <pre>
+                <code class="lang-bash">
+                  <p>$ npm install -g lineman</p>
+                  <br>
+                  <p>> lineman new</p>
+                  <p>> lineman run</p>
+                  <p>> lineman spec</p>
+                  <p>> lineman build</p>
+                </code>
+              </pre>
+            </div>
           </div>
-
-          <p>
-            The project is
-            <a href="http://github.com/linemanjs/lineman/">hosted on GitHub</a>.
-            You can report bugs and discuss features on the
-            <a href="http://github.com/linemanjs/lineman/issues">issues page</a>
-            or send tweets to <a href="http://twitter.com/linemanjs">@linemanjs</a>.
-          </p>
-
-          <p>
-            <i>Lineman is open-source technology from <a href="http://testdouble.com/">Test Double, LLC</a>.</i>
-          </p>
-
+          <div id="documentation">
+            <%= yield %>
+          </div>
         </div>
-        <div id="documentation">
-          <%= yield %>
         </div>
       </div>
+<<<<<<< HEAD
+    <script type="text/javascript" src="/js/app.js"></script>
+=======
       </div>
 
     <script type="text/javascript" src="<%-cdn%>js/app.js"></script>
+>>>>>>> master
     <script type="text/javascript">
       var _gaq = _gaq || [];
       _gaq.push(['_setAccount', 'UA-32958269-1']);

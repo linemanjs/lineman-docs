@@ -7,6 +7,7 @@ root.Sidebar = class Sidebar
     $("<div></div>").sidr
       name: "sidr-right"
       side: "right"
+      body: ".container"
       onOpen: -> enablePageLinks()
       onClose: -> disablePageLinks()
 

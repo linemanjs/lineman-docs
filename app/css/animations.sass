@@ -1,0 +1,71 @@
+.animated 
+  -webkit-animation-duration: .5s
+  //-moz-animation-duration: .5s
+  //-o-animation-duration: .5s
+  animation-duration: .5s
+  -webkit-animation-fill-mode: both
+  //-moz-animation-fill-mode: both
+  //-o-animation-fill-mode: both
+  animation-fill-mode: both
+
+@-webkit-keyframes slideOutUp 
+  0% 
+    -webkit-transform: translateY(0)
+    transform: translateY(0)
+
+
+  100% 
+    opacity: 0
+    -webkit-transform: translateY(-100px)
+    transform: translateY(-100px)
+
+
+@keyframes slideOutUp 
+  0% 
+    -webkit-transform: translateY(0)
+    -ms-transform: translateY(0)
+    transform: translateY(0)
+
+
+  100% 
+    opacity: 0
+    -webkit-transform: translateY(-100px)
+    -ms-transform: translateY(-100px)
+    transform: translateY(-100px)
+
+
+.slideOutUp 
+  -webkit-animation-name: slideOutUp
+  //-moz-animation-name: slideOutUp
+  //-o-animation-name: slideOutUp
+  animation-name: slideOutUp
+
+@-webkit-keyframes slideInDown 
+  0% 
+    opacity: 0
+    -webkit-transform: translateY(-100px)
+    transform: translateY(-100px)
+
+
+  100% 
+    -webkit-transform: translateY(0)
+    transform: translateY(0)
+
+
+@keyframes slideInDown 
+  0% 
+    opacity: 0
+    -webkit-transform: translateY(-100px)
+    -ms-transform: translateY(-100px)
+    transform: translateY(-100px)
+
+
+  100% 
+    -webkit-transform: translateY(0)
+    -ms-transform: translateY(0)
+    transform: translateY(0)
+
+
+.slideInDown 
+  -webkit-animation-name: slideInDown
+  animation-name: slideInDown

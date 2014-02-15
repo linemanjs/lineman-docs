@@ -37,25 +37,25 @@ For more info, check out http://github.com/linemanjs/lineman
 
 If you already know that you want to use a particular client-side framework (like Backbone, Ember, or Angular) we have a few framework-templates floating around to help you get up-and-running even _more_ faster:
 
-<div class="template-projects">
+<div class="template-projects cf">
   <a href="https://github.com/linemanjs/lineman-backbone-template" target="_blank">
+    <h4>Lineman Backbone</h4>
     <div class="templates backbone"></div>
-    <h4>Lineman Backbone Template</h4>
   </a>
   <a href="https://github.com/linemanjs/lineman-angular-template" target="_blank">
+    <h4>Lineman Angular</h4>
     <div class="templates angular"></div>
-    <h4>Lineman Angular Template</h4>
   </a>
   <a href="https://github.com/linemanjs/lineman-ember-template" target="_blank">
+    <h4>Lineman Ember</h4>
     <div class="templates ember"></div>
-    <h4>Lineman Ember Template</h4>
   </a>
   <a href="https://github.com/linemanjs/lineman-lib-template" target="_blank">
+    <h4>Lineman Lib</h4>
     <div class="templates lib"></div>
-    <h4>Lineman Lib Template</h4>
   </a>
   <a href="https://github.com/linemanjs/lineman-blog-template" target="_blank">
+    <h4>Lineman Blog</h4>
     <div class="templates blog"></div>
-    <h4>Lineman Blog Template</h4>
   </a>
 </div>
