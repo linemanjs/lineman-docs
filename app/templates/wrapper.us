@@ -31,7 +31,9 @@
         <span class="close skm">Close</span>
 
         <p class="pages">
-          <img id="lineman-logo" src="<%-cdn%>img/lineman-logo.png" alt="Lineman" />
+          <div class="lineman-logo">
+            <img src="<%-cdn%>img/lineman-logo.svg" alt="Lineman" />
+          </div>
           <a class="toc_title" href="#">Lineman</a>
         </p>
 
