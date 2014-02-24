@@ -10,7 +10,7 @@
     <link rel="icon" href="<%=cdn%>img/favicon.png" />
     <link rel="apple-touch-icon" sizes="152x152" href="<%=cdn%>img/apple-touch-icon.png" />
   </head>
-  <body>
+  <body class="rails">
     <div class="background-container"></div>
     <section class="logos">
       <div class="rails-logo">
