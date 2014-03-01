@@ -127,13 +127,8 @@
         </div>
         </div>
       </div>
-<<<<<<< HEAD
-    <script type="text/javascript" src="/js/app.js"></script>
-=======
-      </div>
-
+     
     <script type="text/javascript" src="<%-cdn%>js/app.js"></script>
->>>>>>> master
     <script type="text/javascript">
       var _gaq = _gaq || [];
       _gaq.push(['_setAccount', 'UA-32958269-1']);
