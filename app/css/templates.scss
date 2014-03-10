@@ -43,23 +43,23 @@
     background-size: 100%;
 
     &.backbone {
-      background-image: url("/img/backbone-logo.png");
+      background-image: url("../img/backbone-logo.png");
     }
 
     &.angular {
-      background-image: url("/img/angular-logo.png");
+      background-image: url("../img/angular-logo.png");
     }
 
     &.ember {
-      background-image: url("/img/ember-logo.png");
+      background-image: url("../img/ember-logo.png");
     }
 
     &.lib {
-      background-image: url("/img/js-lib-logo.png");
+      background-image: url("../img/js-lib-logo.png");
     }
 
     &.blog {
-      background-image: url("/img/blog-logo.png");
+      background-image: url("../img/blog-logo.png");
     }
   }
 }
