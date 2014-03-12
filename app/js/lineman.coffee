@@ -1,7 +1,5 @@
 $ ->
   bigOffset = 250
-  smallOffset = 30
-  offset = bigOffset
   slideOutClass = 'slideOutUpBig'
   wait = false
   startScroll = 0
@@ -20,7 +18,6 @@ $ ->
   # If we reload the page at other point than x,y = 0,0
   if window.scrollY > bigOffset 
     $('#header').addClass('fixed')
-    offset = smallOffset
 
 
   $('#header').addClass('animated')
@@ -53,7 +50,7 @@ $ ->
     #Show header after a while
     clearTimeout $.data(this, "scrollTimer")
     $.data this, "scrollTimer", setTimeout(->
-      if !wait && $('#header').hasClass('fixed')
+      if !wait && $('#header').hasClass('fixed') && $('#header').hasClass(slideOutClass)
         showHeader()
       return
     , 1500)
@@ -71,8 +68,6 @@ $ ->
       $.when($('#header').addClass('fixed')).then -> 
         window.scrollTo(0,0) 
         $('#header').removeClass(slideOutClass) 
-      offset = smallOffset
-
       slideOutClass = 'slideOutUp'
 
 
@@ -80,6 +75,5 @@ $ ->
   $('#header #lineman-logo').bind 'click', (e) ->
     $('#header').removeClass('fixed')
     window.scrollTo(0,0)
-    offset = bigOffset
     slideOutClass = 'slideOutUpBig'
     wait = false
