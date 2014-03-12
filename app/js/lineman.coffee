@@ -53,7 +53,7 @@ $ ->
     #Show header after a while
     clearTimeout $.data(this, "scrollTimer")
     $.data this, "scrollTimer", setTimeout(->
-      if !wait
+      if !wait && $('#header').hasClass('fixed')
         showHeader()
       return
     , 1500)
