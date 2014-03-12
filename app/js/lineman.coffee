@@ -3,8 +3,9 @@ $ ->
   smallOffset = 30
   offset = bigOffset
   slideOutClass = 'slideOutUpBig'
-  lastScrollTop = 0
-  delta = 5
+  wait = false
+  startScroll = 0
+  newScroll = 0
   sidebar = new Sidebar({ body : '.container'}).init()
 
   $('nav').find('a[href^=#]').on 'click', (e) ->
@@ -21,30 +22,64 @@ $ ->
     $('#header').addClass('fixed')
     offset = smallOffset
 
-  # Headroom plugin
-  $('#header').headroom({
-        tolerance: 2,
-        offset : offset,
-        classes: {
-          initial: "animated",
-          pinned: "slideInDown",
-          unpinned: slideOutClass
-        },
-        onUnpin : () -> if !$(this.elem).hasClass('fixed')
-                          console.log('e')
-                          # this.classes.unpinned = slideOutClass
 
-  })
+  $('#header').addClass('animated')
+
+  showHeader = -> 
+    $('#header').removeClass(slideOutClass)
+    $('#header').addClass('slideInDown')
+
+  hideHeader = ->
+    $('#header').removeClass('slideInDown')
+    $('#header').addClass(slideOutClass)
+
+  difference = (a, b) ->
+    if a > b
+      a - b
+    else
+      b - a
+
+  setScrollValues = ->
+    startScroll = newScroll
+
+  shouldHideBigHeader = ->
+    scrollY > bigOffset && !$('#header').hasClass('fixed') && !wait
+ 
+  shouldHideSmallHeader = ->
+    $('#header').hasClass('fixed') && !$('#header').hasClass(slideOutClass) && !wait && difference(startScroll, newScroll) > 30 && scrollY != 0
+  
+
+  $(window).on 'scroll', (e) ->
+    #Show header after a while
+    clearTimeout $.data(this, "scrollTimer")
+    $.data this, "scrollTimer", setTimeout(->
+      if !wait
+        showHeader()
+      return
+    , 1500)
+
+    newScroll = scrollY
+    if shouldHideBigHeader() || shouldHideSmallHeader()
+      hideHeader()
+      setScrollValues()
+      wait = true
 
   # Better animation for green big header
   $('#header').on 'webkitAnimationEnd oAnimationend oAnimationEnd msAnimationEnd animationend', (e) ->
+    wait = false 
     if !$('#header').hasClass('fixed')
-      $.when($('#header').addClass('fixed')).then -> window.scrollTo(0,0)      
+      $.when($('#header').addClass('fixed')).then -> 
+        window.scrollTo(0,0) 
+        $('#header').removeClass(slideOutClass) 
       offset = smallOffset
+
       slideOutClass = 'slideOutUp'
+
+
 
   $('#header #lineman-logo').bind 'click', (e) ->
     $('#header').removeClass('fixed')
     window.scrollTo(0,0)
     offset = bigOffset
     slideOutClass = 'slideOutUpBig'
+    wait = false
