@@ -78,6 +78,22 @@ ok 1 PhantomJS 1.9 - .helloText then expect(this.result).toEqual("Hello, World!"
 Done, without errors.
 ```
 
+If you'd like to output your CI report to a file, you can configure this in your
+`config/application.js` like so:
+
+``` javascript
+'spec-ci': {
+  options: {
+    reporter: {
+      type: 'xunit',
+      dest: 'path/to/my/report.xml'
+    }
+  }
+}
+```
+
+Other supported reporter types include "dot" and "tap".
+
 #### Build Tool (Grunt)
 
 When you are ready to bundle up your modern-client app and add the compiled JavaScript, HTML, CSS, Images, and Webfonts to your static web server you can use Lineman's build command:
