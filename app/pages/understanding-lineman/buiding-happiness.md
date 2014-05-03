@@ -5,7 +5,7 @@ slug: "introduction"
 ordinal: 1
 ---
 
-Lineman's mission is to make fat-client JavasScript web applications as easy to build as traditional server-side HTML web applications.
+Lineman's mission is to make fat-client JavaScript web applications as easy to build as traditional server-side HTML web applications.
 We accomplish this by establishing a narrow set of conventions and curating default configurations for your application's build tasks to make the developer's experience both predictable and convenient. Once you've scaled Lineman's gentle learning curve, you'll be able to ramp-up quickly on *any* project that uses Lineman.
 
 For a broad overview of the motivations behind Lineman, consider watching this [introductory presentation](http://blog.testdouble.com/posts/2013-11-12-1st-class-web-development-with-lineman.html):
