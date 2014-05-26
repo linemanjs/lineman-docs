@@ -12,7 +12,7 @@ Lineman generates a very particular directory structure. It looks like this:
 ├── app
 │   ├── js                  # <-- JS & CoffeeScript
 │   ├── img                 # <-- images (are merged into the 'img' folder inside of generated & dist)
-│   ├── static              # <-- any other static files that need to be included in your built app
+│   ├── static              # <-- any other static files that need to be placed in a path relative to `/`
 │   └── pages               # <-- static HTML pages (underscore and handlebars templates are supported)
 │       └── index.us        # <-- a template used to produce the application's index.html
 │   └── templates           # <-- client-side templates
@@ -36,6 +36,8 @@ Lineman generates a very particular directory structure. It looks like this:
     ├── js                  # <-- 3rd-party Javascript
     │   └── underscore.js   # <-- Underscore, because underscore is fantastic.
     ├── img                 # <-- 3rd-party images (are merged into the 'img' folder inside of generated & dist)
-    └── css                 # <-- 3rd-party CSS
+    ├── css                 # <-- 3rd-party CSS
+    └── static              # <-- any 3rd-party static files that need to be placed in a path relative to `/`
+
 
 ```
