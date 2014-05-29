@@ -80,7 +80,7 @@
           </p>
 
           <div class="featured well">
-            <p class="bright">npm install -g lineman</p>
+            <p class="bright">sudo npm install -g lineman</p>
           </div>
           <div class="sub well">
             <p class="bright">lineman new</p>
@@ -123,5 +123,3 @@
     </script>
   </body>
 </html>
-
-
