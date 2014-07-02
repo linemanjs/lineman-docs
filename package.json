@@ -15,7 +15,7 @@
     "start": "lineman run"
   },
   "devDependencies": {
-    "lineman": ">= 0.24.3",
+    "lineman": ">=0.24.3",
     "lineman-blog": "~0.0.1",
     "grunt-html-validation": "~0.1.13",
     "grunt-htmlhint": "~0.4.0",
