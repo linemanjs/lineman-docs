@@ -58,7 +58,12 @@ http://localhost:7357/
 
 #### Continuous Integration (Testem)
 
-Lineman comes pre-configured to execute your tests using Testems "CI" mode which will run tests against Phantom JS and yield output in TAP13 format which is easy for CI environments (such as Jenkins) to consume:
+Lineman comes pre-configured to execute your tests using Testems "CI"
+mode which will run tests against PhantomJS and yield output in TAP13
+format which is easy for CI environments (such as Jenkins) to consume:
+
+[Be sure to install [PhantomJS](http://phantomjs.org/download.html)
+first!]
 
 ```bash
 $ lineman spec-ci
