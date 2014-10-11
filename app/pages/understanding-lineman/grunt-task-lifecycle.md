@@ -11,9 +11,9 @@ Lineman is a thin abstraction layer on top of Grunt's task automation features. 
 
 ```coffeescript
 appTasks:
-  common: ["coffee", "less", "jshint", "handlebars", "jst", "concat", "images:dev", "webfonts:dev", "pages:dev"]
+  common: ["coffee", "jshint", "handlebars", "jst", "concat_sourcemap", "copy:dev", "images:dev", "webfonts:dev", "pages:dev"]
   dev:    ["server", "watch"]
-  dist:   ["uglify", "cssmin", "images:dist", "webfonts:dist", "pages:dist"]
+  dist:   ["uglify", "cssmin", "copy:dist", "images:dist", "webfonts:dist", "pages:dist"]
 ```
 
 The "common" phase is run during most Lineman actions (e.g. during both `lineman run` & `lineman build`). The "dev" phase only runs during development tasks (e.g. `lineman run`). The "dist" phase only runs during production ("distribution") tasks (e.g. `lineman build`).
