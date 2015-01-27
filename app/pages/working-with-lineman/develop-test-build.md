@@ -2,7 +2,7 @@
 title: "Develop, Test, Build"
 category: "working-with-lineman"
 slug: "develop-test-build"
-ordinal: 4
+ordinal: 5
 ---
 
 #### Web Server (Express JS)

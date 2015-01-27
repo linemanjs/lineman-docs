@@ -2,7 +2,7 @@
 title: "Fetching 3rd-party libraries"
 category: "working-with-lineman"
 slug: "fetching-3rd-party-libraries"
-ordinal: 5
+ordinal: 6
 ---
 
 Lineman includes a `fetch` CLI command for the express purpose of downloading well-known libraries (like jQuery, Ember, Underscore, etc.) and placing them in the correct directory of your application for you.
