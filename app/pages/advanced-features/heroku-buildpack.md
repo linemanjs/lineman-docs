@@ -2,7 +2,7 @@
 title: "Heroku Buildpack"
 category: "advanced-features"
 slug: "heroku-deployment"
-ordinal: 4
+ordinal: 6
 ---
 
 Deploying your app to [heroku](http://heroku.com) couldn't be easier. Once you have the [heroku toolbelt](https://toolbelt.heroku.com) installed, simply run this from your project:
@@ -15,7 +15,7 @@ $ heroku config:set NPM_CONFIG_PRODUCTION=false
 
 As of version 0.35.1, Lineman includes a Procfile and npm script that should work fine with the official Node.js buildpack.
 
-### Legacy buildpack
+#### Legacy buildpack
 
 If you're on an older version of lineman, need to run on an Apache2 server, or if you're using Sass, we also have a custom buildpack available. You can set it up like so:
 

@@ -2,7 +2,7 @@
 title: "Using LiveReload"
 category: "advanced-features"
 slug: "using-livereload"
-ordinal: 5
+ordinal: 7
 ---
 
 Lineman ships with LiveReload, a server that can be used to push instructions to browsers to refresh the page whenever a change is made.

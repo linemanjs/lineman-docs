@@ -1,5 +1,5 @@
 ---
-title: "Using Sass"
+title: "Using Sass (with Ruby)"
 category: "advanced-features"
 slug: "using-sass"
 ordinal: 4
