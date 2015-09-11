@@ -27,3 +27,13 @@ A few issues we've run into with the various tools that manage client-side depen
 * Our applications seem to quickly become littered with symlinks, custom `grunt-contrib-copy` task targets, and complex concatenation globbing
 
 Our (hopefully stop-gap) solution to this problem is to embrace the messy nature of third-party dependencies and take advantage of Lineman's conventional directory structure to fetch libraries for you. This requires us to maintain a [repository of recipes](https://github.com/linemanjs/fetcher-recipes/tree/master/recipes) which specify the relationship between remote assets and their destination directories, but we'd rather externalize that knowledge than require every Lineman user to internalize it.
+
+#### Maintaining your own Recipes Repository
+
+If you want to maintain your own repository of recipes you can do so by overriding `fetcher.recipeRepo` inside of `config/application.{js,coffee}` like so:
+
+```
+fetcher: {
+  recipeRepo: "https://github.com/davemo/fetcher-recipes"
+}
+```
