@@ -12,10 +12,11 @@
     "url": "https://github.com/linemanjs/lineman-docs/issues"
   },
   "scripts": {
-    "start": "lineman run"
+    "start": "lineman run",
+    "postinstall": "lineman build"
   },
   "devDependencies": {
-    "lineman": ">=0.24.3",
+    "lineman": ">=0.36.5",
     "lineman-blog": "~0.0.1",
     "grunt-html-validation": "~0.1.13",
     "grunt-htmlhint": "~0.4.0",
