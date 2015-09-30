@@ -16,10 +16,11 @@
     "postinstall": "lineman build"
   },
   "devDependencies": {
-    "lineman": ">=0.36.5",
-    "lineman-blog": "~0.0.1",
     "grunt-html-validation": "~0.1.13",
     "grunt-htmlhint": "~0.4.0",
+    "grunt-sass": "^1.1.0-beta",
+    "lineman": ">=0.36.5",
+    "lineman-blog": "~0.0.1",
     "underscore.string": "~2.3.3"
   },
   "license": "MIT"

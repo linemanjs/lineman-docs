@@ -3,9 +3,11 @@ lineman = require(process.env['LINEMAN_MAIN'])
 
 module.exports = lineman.config.extend "application",
 
-  loadNpmTasks: lineman.config.application.loadNpmTasks.concat [ "grunt-html-validation", "grunt-htmlhint" ]
+  loadNpmTasks: lineman.config.application.loadNpmTasks.concat [ "grunt-html-validation", "grunt-htmlhint", "grunt-sass" ]
 
-  enableSass: true
+  prependTasks:
+    common: lineman.config.application.prependTasks.common.concat("sass")
+
   enableAssetFingerprint: true
 
   markdown:
