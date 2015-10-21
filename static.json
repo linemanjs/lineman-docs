@@ -1,7 +1,7 @@
 {
   "root": "dist",
   "headers": {
-    "/*": {
+    "/**": {
       "Access-Control-Allow-Origin": "*"
     }
   }
