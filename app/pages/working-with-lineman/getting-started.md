@@ -12,3 +12,7 @@ ordinal: 1
    $ sudo npm install -g lineman
    ```
 3. Install [Phantom JS](http://www.phantomjs.org) and make sure it's on your _PATH_
+
+   ```bash
+   $ sudo npm install -g phantomjs
+   ```
