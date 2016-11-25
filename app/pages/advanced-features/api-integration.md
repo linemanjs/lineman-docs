@@ -43,3 +43,19 @@ server: {
   }
 }
 ```
+
+#### Custom URL Path
+
+If you have a need to mount your application to a custom URL path during
+development (for instance, to emulate your production environment path),
+you can use the `customUrlPath` option in your `server` task in
+`config/application.js`, like so:
+
+```javascript
+server: {
+  customUrlPath: "/custom/path"
+}
+```
+
+This would result in your app being mounted at:
+`http://localhost:8000/custom/path/`
