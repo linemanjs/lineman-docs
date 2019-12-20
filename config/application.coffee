@@ -1,4 +1,4 @@
-cdn = "http://cdn4.testdouble.com/"
+cdn = ""
 lineman = require(process.env['LINEMAN_MAIN'])
 
 module.exports = lineman.config.extend "application",
